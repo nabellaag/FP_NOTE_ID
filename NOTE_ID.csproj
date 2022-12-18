@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Aset\Logo.png" />
+    <None Remove="Aset\Pict-Home.png" />
+    <None Remove="Logo.png" />
+    <None Remove="Pict-Home.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Aset\Logo.png" />
+    <Resource Include="Aset\Pict-Home.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="View Model\" />
+  </ItemGroup>
+
+</Project>
