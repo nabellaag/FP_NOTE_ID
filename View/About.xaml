@@ -4,11 +4,174 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NOTE_ID"
-      mc:Ignorable="d" 
-      d:DesignHeight="832" d:DesignWidth="1280"
-      Title="About">
+      mc:Ignorable="d"
+      Title="About" 
+      Height="832"
+      Width="1280"
+      Background="#FFFCF7E9">
+    <Page.Resources>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <ControlTemplate x:Key="Signuprounded" TargetType="{x:Type ButtonBase}">
+            <Border x:Name="border" 
+                    Background="{TemplateBinding Background}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    SnapsToDevicePixels="true"
+                    CornerRadius="5">
+                <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="Button.IsDefaulted" Value="true">
+                    <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="true">
+                    <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="false">
+                    <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                    <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Page.Resources>
+
+
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="762" />
+            
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="188*" />
+                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="300*" />
+                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="200*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Image Source="/Aset/Logo.png"
+                       Height="63"
+                       Width="188" />
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button Content="About"
+                        Background="{x:Null}"
+                        FontFamily="Inter"
+                        FontSize="20"
+                        FontWeight="Medium"
+                        BorderBrush="{x:Null}" />
+            </Grid>
+            <Grid Grid.Column="2">
+                <Button Content="Home"
+                        Background="{x:Null}"
+                        FontFamily="Inter"
+                        FontSize="20"
+                        FontWeight="Medium"
+                        BorderBrush="{x:Null}" />
+            </Grid>
+            <Grid Grid.Column="3">
+                <Button Content="Product"
+                        Background="{x:Null}"
+                        FontFamily="Inter"
+                        FontSize="20"
+                        FontWeight="Medium"
+                        BorderBrush="{x:Null}" />
+            </Grid>
+            <Grid Grid.Column="5">
+                <Button Content="FAQ"
+                        Background="{x:Null}"
+                        FontFamily="Inter"
+                        FontSize="20"
+                        FontWeight="Medium"
+                        BorderBrush="{x:Null}" />
+            </Grid>
+            <Grid Grid.Column="6">
+                <Button Content="Login"
+                        Background="{x:Null}"
+                        FontFamily="Inter"
+                        FontSize="20"
+                        FontWeight="Medium"
+                        BorderBrush="{x:Null}" />
+            </Grid>
+            <Grid Grid.Column="7">
+                <Button Template="{DynamicResource Signuprounded}" 
+                        Content="Sign Up"
+                        FontFamily="Inter"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Background="#FFECBA57"
+                        Foreground="White"
+                        Width="135"
+                        Height="36"
+                        BorderBrush="{x:Null}" />
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.RowSpan="2">
+            <Image Source="/Aset/Asset-About3.png" 
+                   VerticalAlignment="Bottom" 
+                   Margin="0,0,0,70"/>
+            <Image Source="/Aset/Pict-About.png"
+                   Height="300"
+                   Width="420" 
+                   VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Center" 
+                       TextWrapping="Wrap" 
+                       VerticalAlignment="Center" 
+                       Foreground="White" 
+                       FontSize="24"
+                       FontFamily="Inter" Margin="0,0,0,0">
+                       <Run Text="Sebuah student planner yang memiliki banyak fitur"/><LineBreak/><Run Text="menarik didalamnya.                        "/><LineBreak/><Run Text="Kamu dapat mengaksesnya dimanapun dan kapanpun."/></TextBlock>
+            <TextBlock HorizontalAlignment="Left"
+                       TextWrapping="Wrap" 
+                       Text="Follow us" 
+                       VerticalAlignment="Center" 
+                       FontSize="24" 
+                       Foreground="White" 
+                       Margin="350,161,0,0"/>
+            <Image Source="/Aset/Instagram.png"
+                   Height="38"
+                   Width="38"
+                   Margin="350,250,0,0" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Left"/>
+            <Image Source="/Aset/Twitter.png"
+                   Height="36"
+                   Width="45"
+                   Margin="420,250,0,0" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Left"/>
+            <Image Source="/Aset/Whatsapp.png"
+                   Height="38"
+                   Width="38"
+                   Margin="490,250,0,0" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Left"/>
+            <Image Source="/Aset/Asset-About4.png"
+                   Height="97"
+                   Width="147"
+                   Margin="0,150,180,0" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Right"/>
+        </Grid>
     </Grid>
 </Page>

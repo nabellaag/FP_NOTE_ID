@@ -8,15 +8,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Aset\Asset-About3.png" />
+    <None Remove="Aset\Asset-About4.png" />
+    <None Remove="Aset\Instagram.png" />
     <None Remove="Aset\Logo.png" />
+    <None Remove="Aset\Pict-About.png" />
     <None Remove="Aset\Pict-Home.png" />
+    <None Remove="Aset\Twitter.png" />
+    <None Remove="Aset\Whatsapp.png" />
     <None Remove="Logo.png" />
     <None Remove="Pict-Home.png" />
+    <None Remove="View\Asset-About3.png" />
+    <None Remove="View\Asset-About4.png" />
+    <None Remove="View\Instagram.png" />
+    <None Remove="View\Pict-About.png" />
+    <None Remove="View\Twitter.png" />
+    <None Remove="View\Whatsapp.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Aset\Asset-About3.png" />
+    <Resource Include="Aset\Asset-About4.png" />
+    <Resource Include="Aset\Instagram.png" />
     <Resource Include="Aset\Logo.png" />
+    <Resource Include="Aset\Pict-About.png" />
     <Resource Include="Aset\Pict-Home.png" />
+    <Resource Include="Aset\Twitter.png" />
+    <Resource Include="Aset\Whatsapp.png" />
   </ItemGroup>
 
   <ItemGroup>
