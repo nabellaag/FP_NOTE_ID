@@ -10,13 +10,16 @@
   <ItemGroup>
     <None Remove="Aset\Logo.png" />
     <None Remove="Aset\Pict-Home.png" />
+    <None Remove="Aset\Pict-Login.png" />
     <None Remove="Logo.png" />
     <None Remove="Pict-Home.png" />
+    <None Remove="View\Pict-Login.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Aset\Logo.png" />
     <Resource Include="Aset\Pict-Home.png" />
+    <Resource Include="Aset\Pict-Login.png" />
   </ItemGroup>
 
   <ItemGroup>
