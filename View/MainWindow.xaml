@@ -128,13 +128,18 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="57*" />
-            <ColumnDefinition Width="0*" />
             <ColumnDefinition Width="1223*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="70" />
             <RowDefinition Height="762" />
         </Grid.RowDefinitions>
+        <Frame Grid.Row="1" 
+               Grid.ColumnSpan="2"
+               NavigationUIVisibility="Hidden"
+               Content="">
+            
+        </Frame>
         <Grid Grid.Row="0"
               Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
@@ -205,53 +210,6 @@
                         BorderBrush="{x:Null}" />
             </Grid>
         </Grid>
-
-        <Grid Grid.Row="1"
-              Grid.ColumnSpan="3">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="694*" />
-                <ColumnDefinition Width="556*" />
-            </Grid.ColumnDefinitions>
-            <StackPanel Grid.Column="0">
-
-                <Grid Grid.Row="0">
-                    <TextBlock Text="NOTE ID"
-                               FontSize="65"
-                               FontWeight="Bold"
-                               Margin="80,70,0,0" />
-                </Grid>
-                <Grid Grid.Row="1">
-                    <TextBlock FontSize="20"
-                               FontWeight="Bold"
-                               Margin="80,40,0,0">
-                        <Run Text="We're more than a doc. or a table.  " />
-                        <LineBreak />
-                        <Run Text="Customize Notion to work the way you do." /></TextBlock>
-                </Grid>
-                <Grid Grid.Row="2">
-                    <Button Style="{DynamicResource TryNow}" Content="Try Now"
-                            Height="37"
-                            Width="159"
-                            Margin="81,24,454,117"
-                            FontFamily="Inter"
-                            FontWeight="ExtraBold"
-                            FontSize="20"
-                            Background="#FFECBA57"
-                            Foreground="White"
-                            BorderBrush="{x:Null}" />
-                </Grid>
-
-            </StackPanel>
-
-            <Grid Grid.Column="1">
-                <Image Source="/Aset/Pict-Home.png"
-                       Height="556"
-                       Width="556"
-                       Margin="0,76,0,130" />
-            </Grid>
-        </Grid>
-
-
 
     </Grid>
 </Window>
