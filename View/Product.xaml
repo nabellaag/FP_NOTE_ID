@@ -1,0 +1,239 @@
+﻿<Page x:Class="NOTE_ID.View.Product"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NOTE_ID.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="762" d:DesignWidth="1280"
+      Title="Product"
+      Background="#FCF7E9">
+    <Page.Resources>
+        <Style TargetType="Border" x:Key="RoundedBorder">
+            <Setter Property="Background" Value="#4E726A"/>
+            <Setter Property="CornerRadius" Value="16"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TitleTB">
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="DescTB">
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.ColumnSpan="2"
+                        Style="{DynamicResource RoundedBorder}"
+                        Margin="0,60,0,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Style="{DynamicResource TitleTB}">
+                                You can easily write daily activities.
+                            </TextBlock>
+                            <TextBlock Grid.Row="1"
+                                       Style="{DynamicResource DescTB}">
+                                Nothing will be forgotten if there is such a thing as a to do list feature on NOTE.ID
+                            </TextBlock>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+                <Image Source="\Aset\Task List.png"
+                       Margin="20"/>
+            </Grid>
+
+            <Grid Grid.Row="1"
+                  Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.ColumnSpan="2"
+                        Style="{DynamicResource RoundedBorder}"
+                        Margin="0,60,0,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Style="{DynamicResource TitleTB}">
+                                Want to read a book but don't know where to find it?
+                            </TextBlock>
+                            <TextBlock Grid.Row="1"
+                                       Style="{DynamicResource DescTB}">
+                                Relax, on NOTE.ID there is a book recommendations feature. Where you can easily find the book you want because it is connected to Google Play Books
+                            </TextBlock>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+                <Image Source="\Aset\Book Recommendation.png"
+                       Margin="20"/>
+            </Grid>
+
+            <Grid Grid.Row="2"
+                  Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.ColumnSpan="2"
+                        Style="{DynamicResource RoundedBorder}"
+                        Margin="0,60,0,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Style="{DynamicResource TitleTB}">
+                                Want to take notes quickly?
+                            </TextBlock>
+                            <TextBlock Grid.Row="1"
+                                       Style="{DynamicResource DescTB}">
+                                There is a quick note that you can rely on.
+                            </TextBlock>
+                        </Grid>
+                    </Grid>
+                </Border>
+                <Image Source="\Aset\Quick Note.png"
+                       Margin="20"/>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1"
+                  Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.ColumnSpan="2"
+                        Style="{DynamicResource RoundedBorder}"
+                        Margin="0,60,0,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Style="{DynamicResource TitleTB}">
+                                Your first start on NOTE.ID
+                            </TextBlock>
+                            <TextBlock Grid.Row="1"
+                                       Style="{DynamicResource DescTB}">
+                                Write whatever you want in getting started
+                            </TextBlock>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+                <Image Source="\Aset\Home After Login.png"
+                       Margin="20"/>
+            </Grid>
+
+            <Grid Grid.Row="2"
+                  Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.ColumnSpan="2"
+                        Style="{DynamicResource RoundedBorder}"
+                        Margin="0,60,0,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Style="{DynamicResource TitleTB}">
+                                Do not be afraid of the book you have read lost
+                            </TextBlock>
+                            <TextBlock Grid.Row="1"
+                                       Style="{DynamicResource DescTB}">
+                                The reading list feature was created to make it easier for you to save my book.
+                            </TextBlock>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+                <Image Source="\Aset\Reading List.png"
+                       Margin="20"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>
