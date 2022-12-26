@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NOTE_ID.View_Model
 {
-    internal class ViewModelObservableObject : INotifyPropertyChanged
+    internal class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null)
