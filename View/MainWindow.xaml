@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:NOTE_ID"
         mc:Ignorable="d"
         Title="MainWindow"
-        Height="862" Width="1280"
+        Height="832" Width="1280"
+        WindowStartupLocation="CenterScreen"
         Background="#FFFCF7E9"
         MinWidth="900" MinHeight="720">
     <Window.Resources>
