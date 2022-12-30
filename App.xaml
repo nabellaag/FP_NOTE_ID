@@ -10,6 +10,15 @@
             <DataTemplate DataType="{x:Type viewModel:AboutPageViewModel}">
                 <local:About/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:FAQPageViewModel}">
+                <local:FAQ/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:LoginPageViewModel}">
+                <local:Login/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:HomePageViewModel}">
+                <view:Home/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
