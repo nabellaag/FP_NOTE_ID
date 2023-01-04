@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NOTE_ID"
+        xmlns:viewModel="clr-namespace:NOTE_ID.View_Model"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="832"
@@ -125,6 +126,9 @@
             </Setter>
         </Style>
     </Window.Resources>
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="57*" />
@@ -137,7 +141,7 @@
         <Frame Grid.Row="1" 
                Grid.ColumnSpan="2"
                NavigationUIVisibility="Hidden"
-               Content="">
+               Content="{Binding CurrentView}">
             
         </Frame>
         <Grid Grid.Row="0"
@@ -164,7 +168,8 @@
                         FontFamily="Inter"
                         FontSize="20"
                         FontWeight="Medium"
-                        BorderBrush="{x:Null}" />
+                        BorderBrush="{x:Null}"
+                        Command="{Binding AboutViewCommand}"/>
             </Grid>
             <Grid Grid.Column="2">
                 <Button Content="Home"
@@ -172,7 +177,8 @@
                         FontFamily="Inter"
                         FontSize="20"
                         FontWeight="Medium"
-                        BorderBrush="{x:Null}" />
+                        BorderBrush="{x:Null}"
+                        Command="{Binding HomeViewCommand}"/>
             </Grid>
             <Grid Grid.Column="3">
                 <Button Content="Product"
@@ -188,7 +194,8 @@
                         FontFamily="Inter"
                         FontSize="20"
                         FontWeight="Medium"
-                        BorderBrush="{x:Null}" />
+                        BorderBrush="{x:Null}"
+                        Command="{Binding FAQViewCommand}"/>
             </Grid>
             <Grid Grid.Column="6">
                 <Button x:Name="Login"
@@ -198,7 +205,8 @@
                         FontSize="20"
                         FontWeight="Medium"
                         BorderBrush="{x:Null}"
-                        Click="Login_CLick" />
+                        Click="Login_CLick"
+                        Command="{Binding LoginViewCommand}"/>
             </Grid>
             <Grid Grid.Column="7">
                 <Button Style="{DynamicResource SignUp}" Content="Sign Up"

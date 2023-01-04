@@ -223,8 +223,7 @@
                          Margin="0,55,111,16"
                          BorderBrush="#FFE3AE49"
                            SelectionOpacity="0.5"
-                         TextAlignment="Justify"
-                         TextChanged="TextBox_TextChanged" />
+                         TextAlignment="Justify" />
                 <Button Content="Forgot Password"
                         FontSize="13"
                         FontFamily="inter"

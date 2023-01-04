@@ -2,8 +2,23 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:NOTE_ID"
+             xmlns:viewModel="clr-namespace:NOTE_ID.View_Model"
+             xmlns:view="clr-namespace:NOTE_ID.View"
              StartupUri="/View/MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type viewModel:AboutPageViewModel}">
+                <local:About/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:FAQPageViewModel}">
+                <local:FAQ/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:LoginPageViewModel}">
+                <local:Login/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:HomePageViewModel}">
+                <view:Home/>
+            </DataTemplate>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
