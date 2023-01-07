@@ -27,6 +27,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Aset\Asset-About3.png" />
     <Resource Include="Aset\Asset-About4.png" />
     <Resource Include="Aset\Instagram.png" />
@@ -35,10 +41,6 @@
     <Resource Include="Aset\Pict-Home.png" />
     <Resource Include="Aset\Twitter.png" />
     <Resource Include="Aset\Whatsapp.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Model\" />
   </ItemGroup>
 
 </Project>

@@ -167,6 +167,7 @@
                         FontSize="20"
                         FontWeight="Medium"
                         BorderBrush="{x:Null}"
+                        Click="Button_Click"
                         Command="{Binding AboutViewCommand}"/>
             </Grid>
             
