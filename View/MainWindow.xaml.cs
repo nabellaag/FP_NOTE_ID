@@ -24,7 +24,6 @@ namespace NOTE_ID
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Content = new Product();
         }
 
         private void Login_CLick(object sender, RoutedEventArgs e)

@@ -51,80 +51,10 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="70" />
             <RowDefinition Height="762" />
             
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="188*" />
-                <ColumnDefinition Width="100*" />
-                <ColumnDefinition Width="100*" />
-                <ColumnDefinition Width="100*" />
-                <ColumnDefinition Width="300*" />
-                <ColumnDefinition Width="100*" />
-                <ColumnDefinition Width="100*" />
-                <ColumnDefinition Width="200*" />
-            </Grid.ColumnDefinitions>
-
-            <Grid Grid.Column="0">
-                <Image Source="/Aset/Logo.png"
-                       Height="63"
-                       Width="188" />
-            </Grid>
-            <Grid Grid.Column="1">
-                <Button Content="About"
-                        Background="{x:Null}"
-                        FontFamily="Inter"
-                        FontSize="20"
-                        FontWeight="Medium"
-                        BorderBrush="{x:Null}" />
-            </Grid>
-            <Grid Grid.Column="2">
-                <Button Content="Home"
-                        Background="{x:Null}"
-                        FontFamily="Inter"
-                        FontSize="20"
-                        FontWeight="Medium"
-                        BorderBrush="{x:Null}" />
-            </Grid>
-            <Grid Grid.Column="3">
-                <Button Content="Product"
-                        Background="{x:Null}"
-                        FontFamily="Inter"
-                        FontSize="20"
-                        FontWeight="Medium"
-                        BorderBrush="{x:Null}" />
-            </Grid>
-            <Grid Grid.Column="5">
-                <Button Content="FAQ"
-                        Background="{x:Null}"
-                        FontFamily="Inter"
-                        FontSize="20"
-                        FontWeight="Medium"
-                        BorderBrush="{x:Null}" />
-            </Grid>
-            <Grid Grid.Column="6">
-                <Button Content="Login"
-                        Background="{x:Null}"
-                        FontFamily="Inter"
-                        FontSize="20"
-                        FontWeight="Medium"
-                        BorderBrush="{x:Null}" />
-            </Grid>
-            <Grid Grid.Column="7">
-                <Button Template="{DynamicResource Signuprounded}" 
-                        Content="Sign Up"
-                        FontFamily="Inter"
-                        FontSize="20"
-                        FontWeight="Bold"
-                        Background="#FFECBA57"
-                        Foreground="White"
-                        Width="135"
-                        Height="36"
-                        BorderBrush="{x:Null}" />
-            </Grid>
-        </Grid>
+       
 
         <Grid Grid.Row="1" Grid.RowSpan="2">
             <Image Source="/Aset/Asset-About3.png" 
