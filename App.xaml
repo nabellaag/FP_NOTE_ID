@@ -7,6 +7,9 @@
              StartupUri="/View/MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Style/MenuRadioButton.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
             <DataTemplate DataType="{x:Type viewModel:AboutPageViewModel}">
                 <local:About/>
             </DataTemplate>

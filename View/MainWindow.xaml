@@ -7,9 +7,10 @@
         xmlns:viewModel="clr-namespace:NOTE_ID.View_Model"
         mc:Ignorable="d"
         Title="MainWindow"
-        Height="832"
-        Width="1280"
-        Background="#FFFCF7E9">
+        Height="832" Width="1280"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFFCF7E9"
+        MinWidth="900" MinHeight="720">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -130,13 +131,9 @@
         <viewModel:MainViewModel/>
     </Window.DataContext>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="57*" />
-            <ColumnDefinition Width="1223*" />
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="70" />
-            <RowDefinition Height="762" />
+            <RowDefinition Height="762*" />
         </Grid.RowDefinitions>
         <Frame Grid.Row="1" 
                Grid.ColumnSpan="2"
@@ -147,21 +144,22 @@
         <Grid Grid.Row="0"
               Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="188*" />
-                <ColumnDefinition Width="100*" />
-                <ColumnDefinition Width="100*" />
-                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="188" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100" />
                 <ColumnDefinition Width="300*" />
-                <ColumnDefinition Width="100*" />
-                <ColumnDefinition Width="100*" />
-                <ColumnDefinition Width="200*" />
-
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="200" />
             </Grid.ColumnDefinitions>
+            
             <Grid Grid.Column="0">
                 <Image Source="/Aset/Logo.png"
                        Height="63"
                        Width="188" />
             </Grid>
+            
             <Grid Grid.Column="1">
                 <Button Content="About"
                         Background="{x:Null}"
@@ -171,6 +169,7 @@
                         BorderBrush="{x:Null}"
                         Command="{Binding AboutViewCommand}"/>
             </Grid>
+            
             <Grid Grid.Column="2">
                 <Button Content="Home"
                         Background="{x:Null}"
@@ -180,6 +179,7 @@
                         BorderBrush="{x:Null}"
                         Command="{Binding HomeViewCommand}"/>
             </Grid>
+            
             <Grid Grid.Column="3">
                 <Button Content="Product"
                         Background="{x:Null}"
@@ -188,6 +188,7 @@
                         FontWeight="Medium"
                         BorderBrush="{x:Null}" />
             </Grid>
+            
             <Grid Grid.Column="5">
                 <Button Content="FAQ"
                         Background="{x:Null}"
@@ -197,6 +198,7 @@
                         BorderBrush="{x:Null}"
                         Command="{Binding FAQViewCommand}"/>
             </Grid>
+            
             <Grid Grid.Column="6">
                 <Button x:Name="Login"
                         Content="Login"
@@ -208,6 +210,7 @@
                         Click="Login_CLick"
                         Command="{Binding LoginViewCommand}"/>
             </Grid>
+            
             <Grid Grid.Column="7">
                 <Button Style="{DynamicResource SignUp}" Content="Sign Up"
                         FontFamily="Inter"
@@ -220,6 +223,5 @@
                         BorderBrush="{x:Null}" />
             </Grid>
         </Grid>
-
     </Grid>
 </Window>

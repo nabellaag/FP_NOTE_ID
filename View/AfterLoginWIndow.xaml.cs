@@ -10,26 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NOTE_ID.View;
 
-namespace NOTE_ID
+namespace NOTE_ID.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AfterLoginWIndow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AfterLoginWIndow : Window
     {
-        public MainWindow()
+        public AfterLoginWIndow()
         {
             InitializeComponent();
-            MainFrame.Content = new Product();
-        }
-
-        private void Login_CLick(object sender, RoutedEventArgs e)
-        {
-           
         }
     }
 }
