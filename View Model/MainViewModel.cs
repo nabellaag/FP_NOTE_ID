@@ -18,6 +18,8 @@ namespace NOTE_ID.View_Model
         private FAQPageViewModel fAQPage;
         private HomePageViewModel homePage;
         private LoginPageViewModel loginPage;
+        private ICommand productViewCommand;
+        private ProductPageViewModel productPage;
 
         public ICommand HomeViewCommand
         {
@@ -37,6 +39,10 @@ namespace NOTE_ID.View_Model
         public ICommand LoginViewCommand
         {
             get => loginViewCommand; set => loginViewCommand = value;
+        }
+        public ICommand ProductViewCommand
+        {
+            get => productViewCommand; set => productViewCommand = value;
         }
         public object CurrentView
         {
@@ -83,6 +89,10 @@ namespace NOTE_ID.View_Model
                 OnPropertyChanged();
             }
         }
+        public ProductPageViewModel ProductPage
+        {
+            get => productPage; set => productPage = value;
+        }
 
         public MainViewModel()
         {
@@ -90,6 +100,7 @@ namespace NOTE_ID.View_Model
             aboutPage = new AboutPageViewModel();
             fAQPage = new FAQPageViewModel();
             loginPage = new LoginPageViewModel();
+            productPage = new ProductPageViewModel();
 
             currentView = homePage;
 
@@ -97,6 +108,7 @@ namespace NOTE_ID.View_Model
             aboutViewCommand = new CommandViewModel(x => CurrentView = aboutPage);
             fAQViewCommand = new CommandViewModel(x => CurrentView = fAQPage);
             loginViewCommand = new CommandViewModel(x => CurrentView = loginPage);
+            productViewCommand = new CommandViewModel(x => CurrentView = productPage);
         }
 
     }

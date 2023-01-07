@@ -22,6 +22,12 @@
             <DataTemplate DataType="{x:Type viewModel:HomePageViewModel}">
                 <view:Home/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:ProductPageViewModel}">
+                <view:Product/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:GettingStartedPageViewModel}">
+                <view:GettingStarted/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

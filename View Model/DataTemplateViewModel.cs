@@ -21,4 +21,16 @@ namespace NOTE_ID.View_Model
     {
 
     }
+    internal class ProductPageViewModel
+    {
+
+    }
+    internal class SignUpPageViewModel
+    {
+
+    }
+    internal class GettingStartedPageViewModel
+    {
+
+    }
 }

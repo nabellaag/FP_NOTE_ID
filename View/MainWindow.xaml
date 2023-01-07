@@ -135,11 +135,11 @@
             <RowDefinition Height="70" />
             <RowDefinition Height="762*" />
         </Grid.RowDefinitions>
-        <Frame Grid.Row="1" 
+        <Frame Name="MainFrame"
+               Grid.Row="1" 
                Grid.ColumnSpan="2"
                NavigationUIVisibility="Hidden"
                Content="{Binding CurrentView}">
-            
         </Frame>
         <Grid Grid.Row="0"
               Grid.ColumnSpan="3">
