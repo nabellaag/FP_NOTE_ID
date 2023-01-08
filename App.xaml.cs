@@ -24,8 +24,8 @@ namespace NOTE_ID
 
         public App()
         {
-            BookClient.LoadBook("Books.json");
-            QuickNoteClient.LoadQuickNote("QuickNotes.json");
+            //BookClient.LoadBook("Books.json");
+            //QuickNoteClient.LoadQuickNote("QuickNotes.json");
         }
         ~App()
         {

@@ -8,7 +8,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="RadioButton">
                         <Grid>
-                            <Border CornerRadius="20"
+                            <Border CornerRadius="16"
                                     Background="{TemplateBinding Background}">
 
                                 <TextBlock VerticalAlignment="Center"

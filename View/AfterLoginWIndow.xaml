@@ -31,7 +31,9 @@
             <StackPanel Margin="10,0,10,0">
                 <Label Content="Menu"
                        HorizontalAlignment="Left"
-                       FontSize="20"/>
+                       FontSize="20"
+                       Margin="20,0,0,0"
+                       FontWeight="Bold"/>
 
                 <Grid Height="50"
                       Margin="20,10,20,10">
@@ -139,7 +141,8 @@
             </StackPanel>
         </Grid>
 
-        <Frame Grid.Column="1"
+        <Frame Name="MainFrame"
+               Grid.Column="1"
                Grid.Row="1"/>
 
     </Grid>

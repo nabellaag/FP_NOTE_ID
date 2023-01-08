@@ -10,19 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace NOTE_ID.View
 {
     /// <summary>
-    /// Interaction logic for AfterLoginWIndow.xaml
+    /// Interaction logic for QuickNote.xaml
     /// </summary>
-    public partial class AfterLoginWindow : Window
+    public partial class QuickNote : Page
     {
-        public AfterLoginWindow()
+        public QuickNote()
         {
             InitializeComponent();
-            MainFrame.Navigate(new QuickNote());
         }
     }
 }

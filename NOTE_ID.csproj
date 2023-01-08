@@ -8,12 +8,38 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Aset\Asset-About1.png" />
+    <None Remove="Aset\Asset-About2.png" />
     <None Remove="Aset\Asset-About3.png" />
     <None Remove="Aset\Asset-About4.png" />
+    <None Remove="Aset\Asset-FAQ1.png" />
+    <None Remove="Aset\Asset-FAQ2.png" />
+    <None Remove="Aset\Asset-TaskList.png" />
+    <None Remove="Aset\bicara itu ada seninya 1-Book.png" />
+    <None Remove="Aset\Book Recommendation.png" />
+    <None Remove="Aset\BookRecommendation.png" />
+    <None Remove="Aset\BusinessModel-Book.png" />
+    <None Remove="Aset\GettingStarted.png" />
+    <None Remove="Aset\Home After Login.png" />
     <None Remove="Aset\Instagram.png" />
+    <None Remove="Aset\Kamera-UserProfile.png" />
     <None Remove="Aset\Logo.png" />
+    <None Remove="Aset\Password-UserProfile.png" />
     <None Remove="Aset\Pict-About.png" />
+    <None Remove="Aset\Pict-FarhanAvatar.png" />
     <None Remove="Aset\Pict-Home.png" />
+    <None Remove="Aset\Pict-Login.png" />
+    <None Remove="Aset\Pict-ReadingList.png" />
+    <None Remove="Aset\Pict-SignUp.png" />
+    <None Remove="Aset\Pict-Thethings-Book.png" />
+    <None Remove="Aset\Quick Note.png" />
+    <None Remove="Aset\QuickNote.png" />
+    <None Remove="Aset\Reading List.png" />
+    <None Remove="Aset\ReadingList.png" />
+    <None Remove="Aset\Star-BookRecommendation.png" />
+    <None Remove="Aset\Task List.png" />
+    <None Remove="Aset\the psychology-Book.png" />
+    <None Remove="Aset\Todolist.png" />
     <None Remove="Aset\Twitter.png" />
     <None Remove="Aset\Whatsapp.png" />
     <None Remove="Logo.png" />
@@ -27,20 +53,117 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Aset\Asset-About1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Asset-About2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Asset-FAQ1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Asset-FAQ2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Asset-TaskList.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\bicara itu ada seninya 1-Book.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Book Recommendation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\BookRecommendation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\BusinessModel-Book.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\GettingStarted.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Home After Login.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Kamera-UserProfile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Password-UserProfile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Pict-FarhanAvatar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Pict-Login.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Pict-ReadingList.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Pict-SignUp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Pict-Thethings-Book.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Quick Note.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\QuickNote.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Reading List.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\ReadingList.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Star-BookRecommendation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Task List.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\the psychology-Book.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Todolist.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
     <PackageReference Include="MySql.Data" Version="8.0.31" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Aset\Asset-About3.png" />
-    <Resource Include="Aset\Asset-About4.png" />
-    <Resource Include="Aset\Instagram.png" />
-    <Resource Include="Aset\Logo.png" />
-    <Resource Include="Aset\Pict-About.png" />
-    <Resource Include="Aset\Pict-Home.png" />
-    <Resource Include="Aset\Twitter.png" />
-    <Resource Include="Aset\Whatsapp.png" />
+    <Content Include="Aset\Asset-About3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Asset-About4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Instagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Pict-About.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Pict-Home.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Twitter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Aset\Whatsapp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
