@@ -5,10 +5,22 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NOTE_ID.View"
       mc:Ignorable="d" 
-      d:DesignHeight="832" d:DesignWidth="1000"
+      d:DesignHeight="764" d:DesignWidth="1000"
       Title="GettingStarted">
 
     <Grid>
-        
+        <Label Content="Getting Started"/>
+        <Grid Height="664"
+              VerticalAlignment="Bottom"
+              Margin="20"
+              Background="#E5B04A">
+            <StackPanel>
+                <Label Content="Here are the basics:"/>
+                <CheckBox Content="Click anywhere and just start typing"/>
+                <CheckBox Content="Hit / to see all the types of content you can add - headers, videos, sub pages, etc."/>
+                <CheckBox Content="Highlight any text, and use the menu that pops up to style your writing however you like"/>
+            </StackPanel>
+
+        </Grid>
     </Grid>
 </Page>
