@@ -32,6 +32,15 @@
             <DataTemplate DataType="{x:Type viewModel:SignUpPageViewModel}">
                 <local:SignUp />
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:QuickNotePageViewModel}">
+                <view:QuickNote/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:BookRecommendationPageViewModel}">
+                <view:BookRecommendation/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:ReadingListPageViewModel}">
+                <view:ReadingList/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
