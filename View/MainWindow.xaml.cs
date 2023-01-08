@@ -33,7 +33,6 @@ namespace NOTE_ID
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            App.BookClient.SaveBook(App.books);
         }
     }
 }
