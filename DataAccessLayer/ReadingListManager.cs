@@ -20,7 +20,7 @@ namespace NOTE_ID.DataAccessLayer
             }
         }
         public List<ReadingList> LoadQuickNote(string filePath)
-        {
+    {
             return JsonConvert.DeserializeObject<List<ReadingList>>(File.ReadAllText(filePath));
         }
     }
