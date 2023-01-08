@@ -20,6 +20,8 @@ namespace NOTE_ID.View_Model
         private LoginPageViewModel loginPage;
         private ICommand productViewCommand;
         private ProductPageViewModel productPage;
+        private SignUpPageViewModel signUpPage;
+        private ICommand signUpViewCommand;
 
         public ICommand HomeViewCommand
         {
@@ -93,6 +95,13 @@ namespace NOTE_ID.View_Model
         {
             get => productPage; set => productPage = value;
         }
+        public ICommand SignUpViewCommand 
+        { 
+            get => signUpViewCommand; 
+            set => signUpViewCommand = value; 
+        
+        
+        }
 
         public MainViewModel()
         {
@@ -101,6 +110,7 @@ namespace NOTE_ID.View_Model
             fAQPage = new FAQPageViewModel();
             loginPage = new LoginPageViewModel();
             productPage = new ProductPageViewModel();
+            signUpPage = new SignUpPageViewModel();
 
             currentView = homePage;
 
@@ -109,6 +119,7 @@ namespace NOTE_ID.View_Model
             fAQViewCommand = new CommandViewModel(x => CurrentView = fAQPage);
             loginViewCommand = new CommandViewModel(x => CurrentView = loginPage);
             productViewCommand = new CommandViewModel(x => CurrentView = productPage);
+            signUpViewCommand = new CommandViewModel(x => CurrentView = signUpPage);
         }
 
     }

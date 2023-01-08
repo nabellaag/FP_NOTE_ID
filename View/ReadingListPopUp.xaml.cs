@@ -12,27 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NOTE_ID.View;
 
-namespace NOTE_ID
+namespace NOTE_ID.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ReadingListPopUp.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ReadingListPopUp : UserControl
     {
-        public MainWindow()
+        public ReadingListPopUp()
         {
             InitializeComponent();
-        }
-
-        private void Login_CLick(object sender, RoutedEventArgs e)
-        {
-           
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
         }
     }
 }

@@ -187,7 +187,8 @@
                         FontFamily="Inter"
                         FontSize="20"
                         FontWeight="Medium"
-                        BorderBrush="{x:Null}" />
+                        BorderBrush="{x:Null}"
+                        Command="{Binding ProductViewCommand}"/>
             </Grid>
             
             <Grid Grid.Column="5">
