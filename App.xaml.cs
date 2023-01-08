@@ -21,6 +21,8 @@ namespace NOTE_ID
      
         public static List<Book> books = new List<Book>();
         public static List<QuickNote> quickNotes = new List<QuickNote>();
+        public static List<ReadingList> readingLists = new List<ReadingList>();
+        
         public static NoteIdJSON JsonClient = new NoteIdJSON();
         public App()
         {
@@ -30,7 +32,10 @@ namespace NOTE_ID
         ~App()
         {
             JsonClient.SaveList<Book>(books, "Book.json");
+            JsonClient.SaveList<QuickNote>(quickNotes, "QuickNote.json");
+            JsonClient.SaveList<ReadingList>(readingLists, "ReadingList.json");
             
+
         }
     }
 }
