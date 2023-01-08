@@ -22,7 +22,7 @@ namespace NOTE_ID.View
         public AfterLoginWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new QuickNote());
+            MainFrame.Navigate(new BookRecommendation());
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using NOTE_ID.Data_Acces_Layer;
+﻿using NOTE_ID.API;
+using NOTE_ID.Data_Acces_Layer;
 using NOTE_ID.Model;
 using System;
 using System.Collections.Generic;
@@ -19,16 +20,16 @@ namespace NOTE_ID
     {
      
         public static List<Book> books = new List<Book>();
-        public static List<QuickNote> quicNotes = new List<QuickNote>();
-
+        public static List<QuickNote> quickNotes = new List<QuickNote>();
+        public static NoteIdJSON JsonClient = new NoteIdJSON();
         public App()
         {
-            //BookClient.LoadBook("Books.json");
-            //QuickNoteClient.LoadQuickNote("QuickNotes.json");
+
         }
+
         ~App()
         {
-            
+            JsonClient.SaveList<Book>(books, "Book.json");
             
         }
     }

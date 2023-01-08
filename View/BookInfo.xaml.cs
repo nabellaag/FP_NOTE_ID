@@ -16,13 +16,15 @@ using System.Windows.Shapes;
 namespace NOTE_ID.View
 {
     /// <summary>
-    /// Interaction logic for BookRecommendation.xaml
+    /// Interaction logic for BookInfo.xaml
     /// </summary>
-    public partial class BookRecommendation : Page
+    public partial class BookInfo : Page
     {
-        public BookRecommendation()
+        Frame frame;
+        public BookInfo(Frame frame)
         {
             InitializeComponent();
+            this.frame = frame;
             SetBooksRec();
         }
 
@@ -30,7 +32,7 @@ namespace NOTE_ID.View
         {
             //if (App.books.Count < 1) { return; }
             Style style = this.FindResource("BookButton") as Style;
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
                 BitmapImage bitmap = new BitmapImage();
                 //bitmap.BeginInit();
@@ -39,8 +41,8 @@ namespace NOTE_ID.View
 
                 Button button = new Button
                 {
-                    Width = 250,
-                    Height = 360,
+                    Width = 100,
+                    Height = 150,
                     Margin = new Thickness(20),
                     Tag = i,
                     Name = "sdsfsdf",
@@ -49,15 +51,19 @@ namespace NOTE_ID.View
                     Style = style
                 };
 
-                button.Click += new RoutedEventHandler(Book_Click);
-                BooksSP.Children.Add(button);
+                //button.Click += new RoutedEventHandler(Book_Click);
+                BooksSP2.Children.Add(button);
             }
         }
 
-        private void Book_Click(object sender, RoutedEventArgs e)
+        private void DescButt_Click(object sender, RoutedEventArgs e)
         {
-            BookFrame.Visibility = Visibility.Visible;
-            BookFrame.Navigate(new BookInfo(BookFrame));
+            Detail.Visibility = Visibility.Hidden;
+        }
+
+        private void DetailButt_Click(object sender, RoutedEventArgs e)
+        {
+            Detail.Visibility = Visibility.Visible;
         }
     }
 }
