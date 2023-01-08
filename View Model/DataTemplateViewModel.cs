@@ -33,4 +33,20 @@ namespace NOTE_ID.View_Model
     {
 
     }
+    internal class QuickNotePageViewModel
+    {
+
+    }
+    internal class ReadingListPageViewModel
+    {
+
+    }
+    internal class BookRecommendationPageViewModel
+    {
+
+    }
+    internal class ToDoListPageViewModel
+    {
+
+    }
 }
