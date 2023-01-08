@@ -115,26 +115,29 @@
                                 <Setter Property="Background" Value="DarkOrange"/>
                             </Trigger>
                         </Style.Triggers>
-                    </Style>
-                </Button.Style>
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Width="90"
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="90"
                                 Height="32" 
                                 CornerRadius="10"
                                 Background="{TemplateBinding Background}">
-                            <TextBlock Text="Save" 
+                                        <TextBlock Text="Save" 
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Center"
                                        FontSize="18"
                                        FontFamily="Inter"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
             </Button>
             <Button Background="White"
                     Foreground="Black"
-                    Margin="20,0,0,0">
+                    Margin="20,0,0,0"
+                    Cursor="Hand">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Style.Triggers>
@@ -142,24 +145,24 @@
                                 <Setter Property="Background" Value="LightGray"/>
                             </Trigger>
                         </Style.Triggers>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Width="90"
+                                            Height="32"
+                                            CornerRadius="10"
+                                            Background="{TemplateBinding Background}">
+                                        <TextBlock Text="Cancel" 
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="18"
+                                                   FontFamily="Inter"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
                     </Style>
                 </Button.Style>
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Width="90"
-                                Height="32" 
-                                CornerRadius="10"
-                                BorderBrush="#E3AE49"
-                                BorderThickness="2"
-                                Background="{TemplateBinding Background}">
-                            <TextBlock Text="Cancel" 
-                                       HorizontalAlignment="Center"
-                                       VerticalAlignment="Center"
-                                       FontSize="18"
-                                       FontFamily="Inter"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
             </Button>
         </StackPanel>
     </Grid>
