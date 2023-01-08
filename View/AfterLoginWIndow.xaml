@@ -4,10 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NOTE_ID.View"
+        xmlns:viewModel="clr-namespace:NOTE_ID.View_Model"
         mc:Ignorable="d"
         Title="AfterLoginWIndow" Height="864" Width="1280"
         FontFamily="Inter"
         FontSize="16">
+    <Window.DataContext>
+        <viewModel:AfterLoginViewModel />
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="280"/>
@@ -38,7 +42,8 @@
                     <RadioButton Tag="0"
                                  GroupName="MenuButtons"
                                  Style="{StaticResource MenuRadioButton}"
-                                 IsChecked="True"/>
+                                 IsChecked="True"
+                                 Command="{Binding GettingStartedCommand}"/>
                     <StackPanel Orientation="Horizontal"
                                 Margin="10"
                                 IsHitTestVisible="False">
@@ -52,7 +57,7 @@
                     <RadioButton Tag="0"
                                  GroupName="MenuButtons"
                                  Style="{StaticResource MenuRadioButton}"
-                                 />
+                                 Command="{Binding QuickNoteCommand}"/>
                     <StackPanel Orientation="Horizontal"
                                 Margin="10"
                                 IsHitTestVisible="False">
@@ -66,7 +71,7 @@
                     <RadioButton Tag="0"
                                  GroupName="MenuButtons"
                                  Style="{StaticResource MenuRadioButton}"
-                                 />
+                                 Command="{Binding BookRecommendationCommand}"/>
                     <StackPanel Orientation="Horizontal"
                             Margin="10"
                                 IsHitTestVisible="False">
@@ -80,7 +85,7 @@
                     <RadioButton Tag="0"
                                  GroupName="MenuButtons"
                                  Style="{StaticResource MenuRadioButton}"
-                                 />
+                                 Command="{Binding ToDoListCommand}"/>
                     <StackPanel Orientation="Horizontal"
                             Margin="10"
                                 IsHitTestVisible="False">
@@ -94,7 +99,7 @@
                     <RadioButton Tag="0"
                                  GroupName="MenuButtons"
                                  Style="{StaticResource MenuRadioButton}"
-                                 />
+                                 Command="{Binding ReadingListCommand}"/>
                     <StackPanel Orientation="Horizontal"
                             Margin="10"
                                 IsHitTestVisible="False">

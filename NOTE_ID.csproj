@@ -43,4 +43,8 @@
     <Resource Include="Aset\Whatsapp.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+
 </Project>
