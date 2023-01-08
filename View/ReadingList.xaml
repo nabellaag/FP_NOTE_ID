@@ -4,10 +4,14 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NOTE_ID.View"
+      xmlns:viewModel="clr-namespace:NOTE_ID.View_Model"
       mc:Ignorable="d"
       d:DesignHeight="764"
       d:DesignWidth="1000"
       Title="ReadingList">
+    <Page.DataContext>
+        <viewModel:ReadingListViewModel/>
+    </Page.DataContext>
 
     <Grid>
         <Grid>
@@ -34,12 +38,14 @@
                            HorizontalAlignment="Left"/>
                     <Button Width="55"
                             Height="21"
+                            x:Name="NewRLButton"
                             VerticalAlignment="Bottom"
                             HorizontalAlignment="Right"
                             Content="+ New"
                             Foreground="#F886A8"
                             Background="Transparent"
-                            BorderThickness="0" />
+                            BorderThickness="0" 
+                            Command ="{Binding NewReadingListCommand}"/>
                     <DataGrid Grid.Row="1">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Title Book"
@@ -54,11 +60,20 @@
                                                 Width="*" />
                             <DataGridTextColumn Header="Status"
                                                 Width="*" />
-                            
+
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>
             </Border>
         </Grid>
+        <Popup StaysOpen="False"
+               IsOpen="{Binding ShowReadingListPopup}"
+               PlacementTarget="{Binding ElementName=NewRLButton}"
+               Placement="Left"
+               Height="570"
+               Width="500"
+               AllowsTransparency="True">
+            <local:ReadingListPopUp/>
+        </Popup>
     </Grid>
 </Page>

@@ -13,12 +13,11 @@ namespace NOTE_ID.Model
         public string Type { get; set; }
         public string Author { get; set; }
         public string Publisher { get; set; }
-
-
-        public enum status
-        {
-            finished = 0,
-            notYet = 1
-        }
+        public Status Status { get; set; }
+    }
+    public enum Status
+    {
+        Finished = 0,
+        NotYet = 1
     }
 }

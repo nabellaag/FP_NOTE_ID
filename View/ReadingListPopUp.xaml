@@ -5,7 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:NOTE_ID.View"
              mc:Ignorable="d" 
-             d:DesignHeight="570" d:DesignWidth="500" Background="Transparent">
+             d:DesignHeight="570" 
+             d:DesignWidth="500" 
+             Background="Transparent">
     <Border Background="#F4ECDD"
             CornerRadius="12"
             BorderBrush="#EAC06F"
