@@ -9,6 +9,28 @@
       Title="BookRecommendation">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Books Recommmendation"
+               Margin="20,0,0,0"
+               FontSize="20"
+               FontWeight="Bold"
+               VerticalAlignment="Center"/>
+        <Border Grid.Row="1"
+                CornerRadius="16"
+                VerticalAlignment="Stretch"
+                Background="#E5B04A"
+                Margin="20">
+            <StackPanel Name="BooksSP"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Stretch"/>
+        </Border>
+        <Frame Name="BookFrame"
+               Grid.Row="1"
+               NavigationUIVisibility="Hidden"
+               Visibility="Hidden"/>
     </Grid>
 </Page>
