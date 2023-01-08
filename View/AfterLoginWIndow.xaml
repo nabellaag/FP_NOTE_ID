@@ -129,21 +129,35 @@
                        Content="Welcome back, nice to see you again!"
                        VerticalContentAlignment="Center"/>
             </Grid>
-
-            <StackPanel Grid.Column="1"
+            <Button Grid.Column="1"
+                    VerticalAlignment="Center"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Command="{Binding ProfileCommand}">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Transparent" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <StackPanel Grid.Column="1"
                         VerticalAlignment="Center"
                         Orientation="Horizontal">
-                <Border CornerRadius="16"
+                    <Border CornerRadius="16"
                         Width="75"
                         Height="75">
-                    <Grid>
-                        <Image Source="/Aset/Pict-FarhanAvatar.png"/>
-                    </Grid>
-                </Border>
-                <Label Content="Abdurahman Khalid"
+                        <Grid>
+                            <Image Source="/Aset/Pict-FarhanAvatar.png"/>
+                        </Grid>
+                    </Border>
+                    <Label Content="Abdurahman Khalid"
                        VerticalAlignment="Center"/>
-
-            </StackPanel>
+                </StackPanel>
+            </Button>
         </Grid>
 
         <Frame Name="MainFrame"

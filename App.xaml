@@ -41,6 +41,9 @@
             <DataTemplate DataType="{x:Type viewModel:ReadingListPageViewModel}">
                 <view:ReadingList/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:ProfilePageViewModel}">
+                <view:Profile/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
