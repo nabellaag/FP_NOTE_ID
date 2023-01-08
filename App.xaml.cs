@@ -17,8 +17,7 @@ namespace NOTE_ID
     /// </summary>
     public partial class App : Application
     {
-        public static BookManager BookClient = new BookManager();
-        public static QuickNoteManager QuickNoteClient = new QuickNoteManager();
+     
         public static List<Book> books = new List<Book>();
         public static List<QuickNote> quicNotes = new List<QuickNote>();
 
