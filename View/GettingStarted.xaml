@@ -9,18 +9,28 @@
       Title="GettingStarted">
 
     <Grid>
-        <Label Content="Getting Started"/>
-        <Grid Height="664"
-              VerticalAlignment="Bottom"
-              Margin="20"
-              Background="#E5B04A">
-            <StackPanel>
-                <Label Content="Here are the basics:"/>
-                <CheckBox Content="Click anywhere and just start typing"/>
-                <CheckBox Content="Hit / to see all the types of content you can add - headers, videos, sub pages, etc."/>
-                <CheckBox Content="Highlight any text, and use the menu that pops up to style your writing however you like"/>
-            </StackPanel>
-
-        </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Getting Started"
+               Margin="20,0,0,0"
+               FontSize="20"
+               FontWeight="Bold"
+               VerticalAlignment="Center"/>
+        <Border Grid.Row="1"
+                CornerRadius="16"
+                VerticalAlignment="Stretch"
+                Background="#E5B04A"
+                Margin="20">
+            <Grid Margin="20">
+                <StackPanel>
+                    <Label Content="Here are the basics:"/>
+                    <CheckBox Content="Click anywhere and just start typing"/>
+                    <CheckBox Content="Hit / to see all the types of content you can add - headers, videos, sub pages, etc."/>
+                    <CheckBox Content="Highlight any text, and use the menu that pops up to style your writing however you like"/>
+                </StackPanel>
+            </Grid>
+        </Border>
     </Grid>
 </Page>
