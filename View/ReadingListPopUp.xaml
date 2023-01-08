@@ -27,7 +27,7 @@
                        HorizontalAlignment="Center"
                        FontWeight="Bold"
                        Margin="0,0,0,10"
-                       FontSize="14"
+                       FontSize="16"
                        FontFamily="Inter"/>
             <StackPanel Grid.Row="1" 
                         HorizontalAlignment="Left" 
@@ -190,10 +190,11 @@
                         HorizontalAlignment="Right"
                         VerticalAlignment="Center"
                         Orientation="Horizontal">
-                <Button Height="40"
-                        Width="100"
+                <Button Height="30"
+                        Width="90"
                         VerticalAlignment="Center"
                         Content="Cancel"
+                        Margin="0,0,10,0"
                         Background="White">
                     
                 </Button>
@@ -203,8 +204,8 @@
                         HorizontalAlignment="Right"
                         VerticalAlignment="Center"
                         Orientation="Horizontal">
-                <Button Height="40"
-                        Width="100"
+                <Button Height="30"
+                        Width="90"
                         VerticalAlignment="Center"
                         Margin="0,0,120,0"
                         Content =" Save"
