@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:NOTE_ID"
       mc:Ignorable="d"
-      d:DesignHeight="832"
+      d:DesignHeight="762"
       d:DesignWidth="1280"
       Title="Login"
       Background="#FFFCF7E9">
@@ -22,13 +22,13 @@
         </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="239" />
+                <RowDefinition Height="200" />
                 <RowDefinition Height="116" />
                 <RowDefinition Height="116" />
                 <RowDefinition Height="70" />
                 <RowDefinition Height="76" />
                 <RowDefinition Height="76" />
-                <RowDefinition Height="139" />
+                <RowDefinition Height="100" />
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <TextBlock Text="Login"
@@ -36,7 +36,7 @@
                            FontFamily="inter"
                            FontWeight="Bold"
                            TextAlignment="Center"
-                           Margin="0,146,66,10" />
+                           Margin="0,120,66,10" />
             </Grid>
             <Grid Grid.Row="1">
                 <TextBlock Text="Email / Phone Number"
