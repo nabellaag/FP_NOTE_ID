@@ -98,10 +98,10 @@
                                         </StackPanel>
                                         <StackPanel Grid.Column="1"
                                                     HorizontalAlignment="Center">
-                                            <Label Content="Penerbit"/>
-                                            <Label Name="Penerbit"/>
-                                            <Label Content="Bahasa"/>
-                                            <Label Name="Bahasa"/>
+                                            <Label Content="Penerbit" />
+                                            <Label Name="Penerbit" />
+                                            <Label Content="Bahasa" />
+                                            <Label Name="Bahasa" />
                                         </StackPanel>
                                     </Grid>
                                 </Grid>
@@ -112,12 +112,16 @@
                 </Grid>
             </Border>
         </Grid>
-        
+
         <StackPanel Grid.Row="2"
                     Name="BooksSP2"
                     Orientation="Horizontal"
                     HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"/>
+                    VerticalAlignment="Stretch" />
+        
+        <StackPanel Grid.Row="2">
+            <Label Content="Similar E-books" />
+        </StackPanel>
 
     </Grid>
 </Page>
