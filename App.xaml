@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:NOTE_ID"
              xmlns:viewModel="clr-namespace:NOTE_ID.View_Model"
              xmlns:view="clr-namespace:NOTE_ID.View"
-             StartupUri="/View/MainWindow.xaml">
+             StartupUri="/View/AfterLoginWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

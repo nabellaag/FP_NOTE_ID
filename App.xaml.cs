@@ -27,7 +27,7 @@ namespace NOTE_ID
         public static NoteIdJSON JsonClient = new();
         public App()
         {
-            signUp = JsonClient.LoadList<Model.SignUp>("SignUp.json");
+            //signUp = JsonClient.LoadList<Model.SignUp>("SignUp.json");
         }
 
         ~App()

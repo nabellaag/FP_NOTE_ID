@@ -19,6 +19,7 @@
     <None Remove="Aset\BookRecommendation.png" />
     <None Remove="Aset\BusinessModel-Book.png" />
     <None Remove="Aset\GettingStarted.png" />
+    <None Remove="Aset\GettingStartedHitam.png" />
     <None Remove="Aset\Home After Login.png" />
     <None Remove="Aset\Instagram.png" />
     <None Remove="Aset\Kamera-UserProfile.png" />
@@ -45,6 +46,7 @@
     <None Remove="Pict-Home.png" />
     <None Remove="View\Asset-About3.png" />
     <None Remove="View\Asset-About4.png" />
+    <None Remove="View\GettingStartedHitam.png" />
     <None Remove="View\Instagram.png" />
     <None Remove="View\Pict-About.png" />
     <None Remove="View\Twitter.png" />
@@ -164,6 +166,10 @@
 
   <ItemGroup>
     <Folder Include="bin\Debug\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Aset\GettingStartedHitam.png" />
   </ItemGroup>
 
 </Project>
