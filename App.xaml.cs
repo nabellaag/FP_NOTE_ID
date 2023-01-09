@@ -35,12 +35,11 @@ namespace NOTE_ID
             signUp = JsonClient.LoadList<Model.SignUp>("SignUp.json");
         }
 
+        
+
         ~App()
         {
-            JsonClient.SaveList<Book>(books, "Book.json");
-            JsonClient.SaveList<QuickNote>(quickNotes, "QuickNote.json");
-            JsonClient.SaveList<ReadingList>(readingLists, "ReadingList.json");
-            JsonClient.SaveList<Model.SignUp>(signUp, "SignUp.json");
+         
         }
     }
 }

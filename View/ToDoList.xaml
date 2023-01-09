@@ -1,14 +1,130 @@
 ﻿<Page x:Class="NOTE_ID.View.ToDoList"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:NOTE_ID.View"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      mc:Ignorable="d"
+      d:DesignHeight="764"
+      Background="#FCF7E9"
+      d:DesignWidth="1000"
       Title="ToDoList">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="481*" />
+            <ColumnDefinition Width="19*" />
+            <ColumnDefinition Width="200*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="210" />
+            <RowDefinition Height="210" />
+            <RowDefinition Height="210" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Label Content="To Do List"
+               Margin="20,0,0,0"
+               FontSize="20"
+               FontWeight="Bold"
+               VerticalAlignment="Center"
+               Grid.ColumnSpan="2" />
+        <Border Grid.Row="1"
+                CornerRadius="16"
+                Background="#E5B04A"
+                Margin="20,20,20,20"
+                Grid.ColumnSpan="2">
+
+            <Button Content="+"
+                    Margin="916,10,16,134"
+                    Background="{x:Null}"
+                    FontWeight="Bold" />
+        </Border>
+        <TextBox Margin="44,7,0,0"
+                 Grid.Row="1"
+                 TextWrapping="Wrap"
+                 Text="To Do"
+                 Width="156"
+                 Height="51"
+                 Background="#FF42B577"
+                 VerticalAlignment="Top"
+                 FontSize="20"
+                 FontWeight="Bold"
+                 Foreground="White"
+                 HorizontalAlignment="Left" />
+
+        <CheckBox  Grid.Row="1"
+                   Content="Clean The Room"
+                   Margin="44,82,8,105"
+                   Checked="CheckBox_Checked" />
+        <CheckBox  Grid.Row="1"
+                   Content="Send Email to John"
+                   Margin="44,105,8,82" />
+
+        <Frame Name="BookFrame"
+               Grid.Row="1"
+               NavigationUIVisibility="Hidden"
+               Visibility="Hidden"
+               Grid.ColumnSpan="2" />
+
+        <Border Grid.Row="2"
+                CornerRadius="16"
+                Background="#E5B04A"
+                Margin="20,20,20,20"
+                Grid.ColumnSpan="2">
+            <Button Content="+"
+                    Margin="916,10,16,134"
+                    Background="{x:Null}" />
+        </Border>
+        <TextBox Margin="44,5,0,0"
+                 Grid.Row="2"
+                 TextWrapping="Wrap"
+                 Text="Doing"
+                 Width="156"
+                 Height="51"
+                 Background="#F886A8"
+                 VerticalAlignment="Top"
+                 FontSize="20"
+                 FontWeight="Bold"
+                 Foreground="White"
+                 HorizontalAlignment="Left" />
+        <CheckBox  Grid.Row="2"
+                   Content="Dinner With Sarah"
+                   Margin="44,79,8,108" />
+
+        <Border Grid.Row="3"
+                CornerRadius="16"
+                Background="#E5B04A"
+                Margin="20,20,20,20"
+                Grid.ColumnSpan="2">
+            <Button Content="+"
+                    Margin="916,10,16,134"
+                    Background="{x:Null}" />
+        </Border>
+        <TextBox Margin="44,0,0,0"
+                 Grid.Row="3"
+                 TextWrapping="Wrap"
+                 Text="Done"
+                 Width="156"
+                 Height="51"
+                 Background="#6F74BD"
+                 VerticalAlignment="Top"
+                 FontSize="20"
+                 FontWeight="Bold"
+                 Foreground="White"
+                 HorizontalAlignment="Left" />
+        <CheckBox  Grid.Row="3"
+                   Content="Buy Groceries"
+                   Margin="44,79,8,108" />
+        <CheckBox  Grid.Row="3"
+                   Content="Order New Bike"
+                   Margin="44,105,8,82" />
+        <Image Grid.Column="2"
+               Margin="32,116,0,12"
+               Grid.RowSpan="4"
+               Grid.Row="1"
+               Source="/Aset/Asset-TaskList.png"
+               Stretch="Fill" />
     </Grid>
 </Page>
