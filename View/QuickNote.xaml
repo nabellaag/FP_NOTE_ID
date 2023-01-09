@@ -29,23 +29,59 @@
                     <RowDefinition/>
                     <RowDefinition Height="60"/>
                 </Grid.RowDefinitions>
+                <Grid>
+                    <TextBlock Text="Title"
+                               FontSize="32">
 
-                <TextBox FontSize="32"
-                         VerticalAlignment="Stretch"
-                         Background="Transparent"
-                         BorderThickness="0">
-                    Title
-                </TextBox>
+                        <TextBlock.Style>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding= "{Binding Text, ElementName=Title}"
+                                                 Value="">
+                                        <Setter Property="Visibility"
+                                                Value="Visible" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                                <Setter Property="Visibility"
+                                        Value="Hidden" />
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                    <TextBox FontSize="32"
+                             Name="Title"
+                             VerticalAlignment="Stretch"
+                             Background="Transparent"
+                             BorderThickness="0" />
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <TextBlock Text="ur note"
+                               FontSize="16">
+
+                        <TextBlock.Style>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Text, ElementName=Text}"
+                                                 Value="">
+                                        <Setter Property="Visibility"
+                                                Value="Visible" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                                <Setter Property="Visibility"
+                                        Value="Hidden" />
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                    <TextBox Grid.Row="1"
+                             Name="Text"
+                             FontSize="16"
+                             VerticalAlignment="Stretch"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             AcceptsReturn="True"
+                             TextWrapping="Wrap" />
+                </Grid>
                 
-                <TextBox Grid.Row="1"
-                         FontSize="16"
-                         VerticalAlignment="Stretch"
-                         Background="Transparent"
-                         BorderThickness="0"
-                         AcceptsReturn="True"
-                         TextWrapping="Wrap">
-                    Your note...
-                </TextBox>
 
                 <Button Grid.Row="2"
                         Width="100"

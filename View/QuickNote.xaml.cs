@@ -24,5 +24,10 @@ namespace NOTE_ID.View
         {
             InitializeComponent();
         }
+
+        private void Text_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

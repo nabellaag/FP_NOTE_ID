@@ -38,15 +38,19 @@ namespace NOTE_ID
             books = JsonClient.LoadList<Book>("Book.json");
             //quickNotes = JsonClient.LoadList<QuickNote>("Book.json");
             //readingLists = JsonClient.LoadList<ReadingList>("LoadList.json");
+=======        
+        public static NoteIdJSON JsonClient = new();
+        public App()
+        {
+
             //signUp = JsonClient.LoadList<Model.SignUp>("SignUp.json");
         }
 
+        
+
         ~App()
         {
-            JsonClient.SaveList<Book>(books, "Book.json");
-            JsonClient.SaveList<QuickNote>(quickNotes, "QuickNote.json");
-            JsonClient.SaveList<ReadingList>(readingLists, "ReadingList.json");
-            JsonClient.SaveList<Model.SignUp>(signUp, "SignUp.json");
+         
         }
     }
 }

@@ -49,7 +49,7 @@
                     <StackPanel Orientation="Horizontal"
                                 Margin="10"
                                 IsHitTestVisible="False">
-                        <Image Source="/Aset/GettingStarted.png"/>
+                        <Image Source="/Aset/GettingStartedHitam.png" />
                         <Label Content="Getting Started"/>
                     </StackPanel>
                 </Grid>
