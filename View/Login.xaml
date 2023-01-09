@@ -124,7 +124,7 @@
                         Width="136"
                         Background="Transparent"
                         Foreground="White"
-                        Margin="154,15,239,23" BorderBrush="{x:Null}"
+                        Margin="154,15,239,23"
                       />
             </Grid>
             <Grid Grid.Row="5">
