@@ -22,7 +22,7 @@ namespace NOTE_ID.View_Model
         private ProductPageViewModel productPage;
         private SignUpPageViewModel signUpPage;
         private ICommand signUpViewCommand;
-
+        //icommnad
         public ICommand HomeViewCommand
         {
             get => homeViewCommand;
