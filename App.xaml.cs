@@ -22,12 +22,12 @@ namespace NOTE_ID
         public static List<Book> books = new List<Book>();
         public static List<QuickNote> quickNotes = new List<QuickNote>();
         public static List<ReadingList> readingLists = new List<ReadingList>();
-        public static List<SignUp> signUp = new List<SignUp>();
+        public static List<Model.SignUp> signUp = new List<Model.SignUp>();
         
-        public static NoteIdJSON JsonClient = new NoteIdJSON();
+        public static NoteIdJSON JsonClient = new();
         public App()
         {
-
+            signUp = JsonClient.LoadList<Model.SignUp>("SignUp.json");
         }
 
         ~App()
@@ -35,9 +35,7 @@ namespace NOTE_ID
             JsonClient.SaveList<Book>(books, "Book.json");
             JsonClient.SaveList<QuickNote>(quickNotes, "QuickNote.json");
             JsonClient.SaveList<ReadingList>(readingLists, "ReadingList.json");
-            JsonClient.SaveList<SignUp>(signUp, "SignUp.json");
-            
-
+            JsonClient.SaveList<Model.SignUp>(signUp, "SignUp.json");
         }
     }
 }
