@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <None Remove="Aset\Asset-About1.png" />
-    <None Remove="Aset\Asset-About2.png" />
     <None Remove="Aset\Asset-About3.png" />
     <None Remove="Aset\Asset-About4.png" />
     <None Remove="Aset\Asset-FAQ1.png" />
@@ -54,9 +53,6 @@
 
   <ItemGroup>
     <Content Include="Aset\Asset-About1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Aset\Asset-About2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Aset\Asset-FAQ1.png">
