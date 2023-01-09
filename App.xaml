@@ -35,9 +35,7 @@
             <DataTemplate DataType="{x:Type viewModel:GettingStartedPageViewModel}">
                 <view:GettingStarted/>
             </DataTemplate>
-            <DataTemplate DataType="{x:Type viewModel:SignUpPageViewModel}">
-                <local:SignUp />
-            </DataTemplate>
+           
             <DataTemplate DataType="{x:Type viewModel:QuickNotePageViewModel}">
                 <view:QuickNote/>
             </DataTemplate>
