@@ -51,6 +51,5 @@ namespace NOTE_ID.View_Model
     }
     internal class ProfilePageViewModel
     {
-
     }
 }
