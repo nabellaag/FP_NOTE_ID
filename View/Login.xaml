@@ -45,15 +45,24 @@
                            FontWeight="Regular"
                            TextAlignment="Left"
                            Margin="0,30,0,0" />
-                <TextBox   
+                <Border CornerRadius="12"
+                        Width="418"
+                        Height="45"
+                        Margin="0,55,111,16"
+                        Background="White"
+                        BorderBrush="#FFE3AE49"
+                        BorderThickness="1.25">
+                    <TextBox   
                         Text="example@gmail.com"
                            FontFamily="inter"
                            FontSize="12"
                            Width="418"
                            Height="45"
-                         Margin="0,55,111,16"
-                         BorderBrush="#FFE3AE49"
-                           SelectionOpacity="0.5" />
+                           Margin="0,55,111,16"
+                           BorderBrush="#FFE3AE49"
+                           SelectionOpacity="0.5"
+                           />
+                </Border>
             </Grid>
             <Grid Grid.Row="2">
                 <TextBlock Text="Password"
@@ -62,23 +71,31 @@
                            FontWeight="Regular"
                            TextAlignment="Left"
                            Margin="0,30,0,0" />
-                <TextBox   Text="******"
-                           FontFamily="inter"
-                           FontSize="12"
-                           Width="418"
-                           Height="45"
-                         Margin="0,55,111,16"
-                         BorderBrush="#FFE3AE49"
-                           SelectionOpacity="0.5"
-                         TextAlignment="Justify" />
-                <Button Content="Forgot Password"
+                <Border CornerRadius="12"
+                        Width="418"
+                        Height="45"
+                        Margin="0,55,111,16"
+                        Background="White"
+                        BorderBrush="#FFE3AE49"
+                        BorderThickness="1.25">
+                    <TextBox   Text="******"
+                               FontFamily="inter"
+                               FontSize="12"
+                               Width="418"
+                               Height="45"
+                               Margin="0,55,111,16"
+                               BorderBrush="#FFE3AE49"
+                               SelectionOpacity="0.5"
+                               TextAlignment="Justify" />
+                </Border>
+                <Button Content="Forgot Password?"
                         FontSize="13"
                         FontFamily="inter"
                         FontWeight="Regular"
                         Height="36"
                         Background="{x:Null}"
                         Foreground="#FF5A6199"
-                        Margin="263,120,111,-37"
+                        Margin="263,113,50,-37"
                         BorderBrush="{x:Null}"
                         RenderTransformOrigin="0.642,0.572" />
             </Grid>
@@ -92,16 +109,23 @@
                 
             </Grid>
             <Grid Grid.Row="4">
+                <Border CornerRadius="8"
+                        Width="136"
+                        Height="36"
+                        Margin="154,15,239,23"
+                        Background="#FFE3AE49"
+                        BorderThickness="1.25">
+                </Border>
                 <Button Content="Login"
                         FontSize="20"
                         FontFamily="inter"
                         FontWeight="Bold"
                         Height="36"
                         Width="136"
-                        Background="#FFE3AE49"
+                        Background="Transparent"
                         Foreground="White"
-                        Margin="154,15,239,23"
-                        BorderBrush="#FFE3AE49" />
+                        Margin="154,15,239,23" BorderBrush="{x:Null}"
+                      />
             </Grid>
             <Grid Grid.Row="5">
                 <Button Content="Don't have an acount? Sign Up"
