@@ -47,6 +47,7 @@ namespace NOTE_ID.View_Model
         {
             get => productViewCommand; set => productViewCommand = value;
         }
+
         public object CurrentView
         {
             get => currentView;
