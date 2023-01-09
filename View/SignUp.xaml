@@ -4,11 +4,15 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NOTE_ID"
+      xmlns:viewModel="clr-namespace:NOTE_ID.View_Model"
       mc:Ignorable="d"
       d:DesignHeight="762"
       d:DesignWidth="1280"
       Background="#FFFCF7E9"
       Title="SignUp">
+    <Page.DataContext>
+        <viewModel:SignUpViewModel/>
+    </Page.DataContext>
 
     <Grid>
         <Grid>
@@ -42,7 +46,7 @@
                                Margin="0,30,0,0" />
                 </Grid>
                 <Grid Grid.Row="1">
-                    <TextBlock Text="Email / Phone Number"
+                    <TextBlock Text="Email"
                                FontSize="16"
                                FontFamily="inter"
                                FontWeight="Regular"
@@ -53,20 +57,21 @@
                             Height="45"
                             Margin="0,55,111,16"
                             Background="White"
-                            BorderBrush="#FFE3AE49"
+                            BorderBrush="{Binding EmailBrush}"
+                            IsHitTestVisible="True"
                             BorderThickness="1.25">
-                        <TextBox Text="example@gmail.com"
-                                 FontFamily="inter"
+                        <TextBox FontFamily="inter"
                                  FontSize="12"
                                  Width="418"
                                  Height="45"
                                  Margin="0,55,111,16"
-                                 BorderBrush="#FFE3AE49"
-                                 SelectionOpacity="0.5" />
+                                 BorderBrush="{Binding EmailBrush}"
+                                 SelectionOpacity="0.5"
+                                 Text="{Binding Email}"/>
                     </Border>
                 </Grid>
                 <Grid Grid.Row="2">
-                    <TextBlock Text="Email / Phone Number"
+                    <TextBlock Text="Username"
                                FontSize="16"
                                FontFamily="inter"
                                FontWeight="Regular"
@@ -77,22 +82,22 @@
                             Height="45"
                             Margin="0,55,111,16"
                             Background="White"
-                            BorderBrush="#FFE3AE49"
+                            BorderBrush="{Binding UserNameBrush}"
                             BorderThickness="1.25">
-                        <TextBox Text="example@gmail.com"
+                        <TextBox Text="{Binding UserName}"
                                  FontFamily="inter"
                                  FontSize="12"
                                  Width="418"
                                  Height="45"
                                  Margin="0,55,111,16"
-                                 BorderBrush="#FFE3AE49"
+                                 BorderBrush="{Binding UserNameBrush}"
                                  SelectionOpacity="0.5" />
                     </Border>
                 </Grid>
                 <Grid Grid.Row="3">
                     <TextBlock Text="Password"
                                FontSize="16"
-                               FontFamily="inter"
+                               FontFamily="Inter"
                                FontWeight="Regular"
                                TextAlignment="Left"
                                Margin="0,30,0,0" />
@@ -101,15 +106,15 @@
                             Height="45"
                             Margin="0,55,111,16"
                             Background="White"
-                            BorderBrush="#FFE3AE49"
+                            BorderBrush="{Binding PasswordBrush}"
                             BorderThickness="1.25">
-                        <TextBox Text="example@gmail.com"
+                        <TextBox Text="{Binding Password}"
                                  FontFamily="inter"
                                  FontSize="12"
                                  Width="418"
                                  Height="45"
                                  Margin="0,55,111,16"
-                                 BorderBrush="#FFE3AE49"
+                                 BorderBrush="{Binding PasswordBrush}"
                                  SelectionOpacity="0.5" />
                     </Border>
                 </Grid>
@@ -125,15 +130,15 @@
                             Height="45"
                             Margin="0,55,111,16"
                             Background="White"
-                            BorderBrush="#FFE3AE49"
+                            BorderBrush="{Binding ConfirmPasswordBrush}"
                             BorderThickness="1.25">
-                        <TextBox Text="example@gmail.com"
+                        <TextBox Text="{Binding ConfirmPassword}"
                                  FontFamily="inter"
                                  FontSize="12"
                                  Width="418"
                                  Height="45"
                                  Margin="0,55,111,16"
-                                 BorderBrush="#FFE3AE49"
+                                 BorderBrush="{Binding ConfirmPasswordBrush}"
                                  SelectionOpacity="0.5" />
                     </Border>
                     
