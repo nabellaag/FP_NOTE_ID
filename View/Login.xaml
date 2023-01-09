@@ -125,7 +125,7 @@
                         Background="Transparent"
                         Foreground="White"
                         Margin="154,15,239,23" BorderBrush="{x:Null}"
-                      />
+                        />
             </Grid>
             <Grid Grid.Row="5">
                 <Button Content="Don't have an acount? Sign Up"
