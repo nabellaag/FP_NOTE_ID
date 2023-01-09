@@ -24,20 +24,163 @@
                Grid.Row="1"
                Source="/Aset/Asset-FAQ2.png"
                Stretch="Fill" />
-        <Border
-                CornerRadius="10"
+        <Border CornerRadius="10"
                 BorderBrush="Black"
                 BorderThickness="1"
                 Grid.Row="1"
                 Margin="78,10,126,97">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="100*" />
                     <ColumnDefinition Width="100*" />
                 </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="47*" />
+                    <RowDefinition Height="56*" />
+                    <RowDefinition Height="82*" />
+                </Grid.RowDefinitions>
+                <Label Content="Is it easy to use?"
+                       HorizontalAlignment="Left"
+                       Margin="10,10,0,0"
+                       VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Foreground="#FFE5B049"
+                       FontSize="24"
+                       FontFamily="Inter"
+                       Height="39"
+                       Width="193" />
+                <Label Content="Yes it is. Everyone can use it easily,&#xD;&#xA;even common people."
+                       Margin="10,63,61,0"
+                       VerticalAlignment="Top"
+                       FontSize="17"
+                       FontFamily="Inter"
+                       Height="80"
+                       Grid.RowSpan="2" />
+                <Label Content="How do I get started?"
+                       HorizontalAlignment="Left"
+                       Margin="10,17,0,0"
+                       VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Foreground="#FFE5B049"
+                       FontSize="24"
+                       FontFamily="Inter"
+                       Grid.Row="1"
+                       Height="39"
+                       Width="254" />
+                <Label Content="All you have to do is choose what features&#xD;&#xA; you want, then just type what you want to&#xD;&#xA; include or save in the note."
+                       Margin="10,70,24,0"
+                       VerticalAlignment="Top"
+                       FontSize="17"
+                       FontFamily="Inter"
+                       Height="80"
+                       Grid.Row="1" />
+                <Label Content="What benefits do I get from &#xD;&#xA;note.id?"
+                       HorizontalAlignment="Left"
+                       Margin="3,0,0,0"
+                       VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Foreground="#FFE5B049"
+                       FontSize="24"
+                       FontFamily="Inter"
+                       Grid.Row="2"
+                       Height="68"
+                       Width="331" />
+                <Label Content="1. You can noted whatever you need.&#xA;2. Create to-do lists as a reminder of your day.&#xA;3. Get book recommendations that linked directly&#xA;    to Google  Play Books.&#xD;&#xA;4. Find out what books you've read and &#xD;&#xA;    their progress."
+                       Margin="10,71,10,0"
+                       VerticalAlignment="Top"
+                       FontSize="17"
+                       FontFamily="Inter"
+                       Height="136"
+                       Grid.Row="2"
+                       RenderTransformOrigin="0.494,2.588" />
+                <Label Content="Is it easy to change plans&#xA;or document?"
+                       HorizontalAlignment="Left"
+                       Margin="17,10,0,0"
+                       VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Foreground="#FFE5B049"
+                       FontSize="24"
+                       FontFamily="Inter"
+                       Grid.Column="1"
+                       Height="68"
+                       Width="292" />
+                <Label Content="Yes, it is. You can change it easily."
+                       Margin="17,85,54,0"
+                       VerticalAlignment="Top"
+                       FontSize="17"
+                       FontFamily="Inter"
+                       Height="38"
+                       Grid.Column="1" />
+                <Label Content="Can I get it all free?"
+                       HorizontalAlignment="Left"
+                       Margin="17,17,0,0"
+                       VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Foreground="#FFE5B049"
+                       FontSize="24"
+                       FontFamily="Inter"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       Height="39"
+                       Width="228" />
+                <Label Content="Yeah sure, you got it all free!!!"
+                       Margin="17,0,17,0"
+                       VerticalAlignment="Center"
+                       FontSize="17"
+                       FontFamily="Inter"
+                       Height="32"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       RenderTransformOrigin="0.5,0.5">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform />
+                            <SkewTransform AngleX="1.048" />
+                            <RotateTransform />
+                            <TranslateTransform X="0.732" />
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Content="How to I get book &#xD;&#xA;recommendation?"
+                       HorizontalAlignment="Left"
+                       Margin="17,0,0,0"
+                       VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Foreground="#FFE5B049"
+                       FontSize="24"
+                       FontFamily="Inter"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       Height="68"
+                       Width="222" />
+                <Label Content="In book recommendations there is a link that&#xD;&#xA;connects to Google Play Books, so you can &#xD;&#xA;access it easily"
+                       Margin="17,77,17,0"
+                       VerticalAlignment="Top"
+                       FontSize="17"
+                       FontFamily="Inter"
+                       Height="80"
+                       Grid.Row="2"
+                       RenderTransformOrigin="0.494,2.588"
+                       Grid.Column="1" />
+                <Label Content="Wait, what about..."
+                       HorizontalAlignment="Left"
+                       Margin="10,-84,0,0"
+                       VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Foreground="#FF42B577"
+                       FontSize="48"
+                       FontFamily="Inter"
+                       Height="63"
+                       Width="493"
+                       Grid.ColumnSpan="2" />
+
+
             </Grid>
-            
+
+
         </Border>
+
 
     </Grid>
 </Page>

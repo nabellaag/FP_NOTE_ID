@@ -45,24 +45,18 @@
                            FontWeight="Regular"
                            TextAlignment="Left"
                            Margin="0,30,0,0" />
-                <Border CornerRadius="12"
-                        Width="418"
-                        Height="45"
-                        Margin="0,55,111,16"
-                        Background="White"
-                        BorderBrush="#FFE3AE49"
-                        BorderThickness="1.25">
-                    <TextBox   
-                        Text="example@gmail.com"
-                           FontFamily="inter"
-                           FontSize="12"
-                           Width="418"
-                           Height="45"
-                           Margin="0,55,111,16"
-                           BorderBrush="#FFE3AE49"
-                           SelectionOpacity="0.5"
-                           />
-                </Border>
+                <TextBox Width="415"
+                         Height="45"
+                         BorderBrush="#E6B24B"
+                         BorderThickness="1.5"
+                         Margin="0,57,114,14">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius"
+                                    Value="12.48" />
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
             </Grid>
             <Grid Grid.Row="2">
                 <TextBlock Text="Password"
@@ -71,23 +65,18 @@
                            FontWeight="Regular"
                            TextAlignment="Left"
                            Margin="0,30,0,0" />
-                <Border CornerRadius="12"
-                        Width="418"
-                        Height="45"
-                        Margin="0,55,111,16"
-                        Background="White"
-                        BorderBrush="#FFE3AE49"
-                        BorderThickness="1.25">
-                    <TextBox   Text="******"
-                               FontFamily="inter"
-                               FontSize="12"
-                               Width="418"
-                               Height="45"
-                               Margin="0,55,111,16"
-                               BorderBrush="#FFE3AE49"
-                               SelectionOpacity="0.5"
-                               TextAlignment="Justify" />
-                </Border>
+                <TextBox Width="415"
+                         Height="45"
+                         BorderBrush="#E6B24B"
+                         BorderThickness="1.5"
+                         Margin="0,57,114,14">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius"
+                                    Value="12.48" />
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
                 <Button Content="Forgot Password?"
                         FontSize="13"
                         FontFamily="inter"
@@ -124,8 +113,8 @@
                         Width="136"
                         Background="Transparent"
                         Foreground="White"
-                        Margin="154,15,239,23" BorderBrush="{x:Null}"
-                        />
+                        Margin="154,15,239,23"
+                      />
             </Grid>
             <Grid Grid.Row="5">
                 <Button Content="Don't have an acount? Sign Up"

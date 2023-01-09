@@ -52,23 +52,18 @@
                                FontWeight="Regular"
                                TextAlignment="Left"
                                Margin="0,30,0,0" />
-                    <Border CornerRadius="12"
-                            Width="418"
-                            Height="45"
-                            Margin="0,55,111,16"
-                            Background="White"
-                            BorderBrush="{Binding EmailBrush}"
-                            IsHitTestVisible="True"
-                            BorderThickness="1.25">
-                        <TextBox FontFamily="inter"
-                                 FontSize="12"
-                                 Width="418"
-                                 Height="45"
-                                 Margin="0,55,111,16"
-                                 BorderBrush="{Binding EmailBrush}"
-                                 SelectionOpacity="0.5"
-                                 Text="{Binding Email}"/>
-                    </Border>
+                    <TextBox Width="415"
+                             Height="45"
+                             BorderBrush="#E6B24B"
+                             BorderThickness="1.5"
+                             Margin="0,57,114,14">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius"
+                                        Value="12.48" />
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
                 </Grid>
                 <Grid Grid.Row="2">
                     <TextBlock Text="Username"
@@ -77,22 +72,18 @@
                                FontWeight="Regular"
                                TextAlignment="Left"
                                Margin="0,30,0,0" />
-                    <Border CornerRadius="12"
-                            Width="418"
-                            Height="45"
-                            Margin="0,55,111,16"
-                            Background="White"
-                            BorderBrush="{Binding UserNameBrush}"
-                            BorderThickness="1.25">
-                        <TextBox Text="{Binding UserName}"
-                                 FontFamily="inter"
-                                 FontSize="12"
-                                 Width="418"
-                                 Height="45"
-                                 Margin="0,55,111,16"
-                                 BorderBrush="{Binding UserNameBrush}"
-                                 SelectionOpacity="0.5" />
-                    </Border>
+                    <TextBox Width="415"
+                             Height="45"
+                             BorderBrush="#E6B24B"
+                             BorderThickness="1.5"
+                             Margin="0,57,114,14">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius"
+                                        Value="12.48" />
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
                 </Grid>
                 <Grid Grid.Row="3">
                     <TextBlock Text="Password"
@@ -101,22 +92,18 @@
                                FontWeight="Regular"
                                TextAlignment="Left"
                                Margin="0,30,0,0" />
-                    <Border CornerRadius="12"
-                            Width="418"
-                            Height="45"
-                            Margin="0,55,111,16"
-                            Background="White"
-                            BorderBrush="{Binding PasswordBrush}"
-                            BorderThickness="1.25">
-                        <TextBox Text="{Binding Password}"
-                                 FontFamily="inter"
-                                 FontSize="12"
-                                 Width="418"
-                                 Height="45"
-                                 Margin="0,55,111,16"
-                                 BorderBrush="{Binding PasswordBrush}"
-                                 SelectionOpacity="0.5" />
-                    </Border>
+                    <TextBox Width="415"
+                             Height="45"
+                             BorderBrush="#E6B24B"
+                             BorderThickness="1.5"
+                             Margin="0,57,114,14">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius"
+                                        Value="12.48" />
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
                 </Grid>
                 <Grid Grid.Row="4">
                     <TextBlock Text="Confirm Password"
@@ -125,22 +112,18 @@
                                FontWeight="Regular"
                                TextAlignment="Left"
                                Margin="0,30,0,0" />
-                    <Border CornerRadius="12"
-                            Width="418"
-                            Height="45"
-                            Margin="0,55,111,16"
-                            Background="White"
-                            BorderBrush="{Binding ConfirmPasswordBrush}"
-                            BorderThickness="1.25">
-                        <TextBox Text="{Binding ConfirmPassword}"
-                                 FontFamily="inter"
-                                 FontSize="12"
-                                 Width="418"
-                                 Height="45"
-                                 Margin="0,55,111,16"
-                                 BorderBrush="{Binding ConfirmPasswordBrush}"
-                                 SelectionOpacity="0.5" />
-                    </Border>
+                    <TextBox Width="415"
+                             Height="45"
+                             BorderBrush="#E6B24B"
+                             BorderThickness="1.5"
+                             Margin="0,57,114,14">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius"
+                                        Value="12.48" />
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
                     
                 </Grid>
                 <Grid Grid.Row="5" HorizontalAlignment="Left">

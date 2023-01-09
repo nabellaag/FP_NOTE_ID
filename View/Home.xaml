@@ -37,21 +37,28 @@
                         <LineBreak />
                         <Run Text="Customize Notion to work the way you do." />
             </TextBlock>
-
-            <Button Grid.Row="3"
-                    Style="{DynamicResource TryNow}"
-                    Content="Try Now"
-                    Height="37"
-                    Width="159"
-                    FontFamily="Inter"
-                    FontWeight="ExtraBold"
-                    FontSize="20"
-                    Background="#FFECBA57"
-                    Foreground="White"
-                    BorderBrush="{x:Null}"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Top"/>
-
+            <Grid Grid.Row="3">
+                <Border 
+                        CornerRadius="12"
+                        Width="159"
+                        Height="37"
+                        Margin="0,0,460,0"
+                      
+                      
+                        >
+                    <Button 
+                        Content="Try Now"
+                        Height="37"
+                        Width="159"
+                        FontFamily="Inter"
+                        FontWeight="ExtraBold"
+                        FontSize="20"
+                        Background="#FFECBA57"
+                        Foreground="White"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"/>
+                </Border>
+            </Grid>
         </Grid>
 
         <Grid Grid.Column="1">
