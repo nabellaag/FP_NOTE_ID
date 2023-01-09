@@ -11,6 +11,9 @@
                 <ResourceDictionary Source="/Style/MenuRadioButton.xaml"/>
                 <ResourceDictionary Source="/Style/BookButton.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type viewModel:MainViewModel}">
+                <local:MainWindow/>
+            </DataTemplate>    
             <DataTemplate DataType="{x:Type viewModel:AboutPageViewModel}">
                 <local:About/>
             </DataTemplate>
