@@ -19,7 +19,7 @@ namespace NOTE_ID
     public partial class App : Application
     {
 
-        public static List<Book> books;
+        public static List<Book> books=new List<Book>();
         public static List<QuickNote> quickNotes = new List<QuickNote>();
         public static List<ReadingList> readingLists = new List<ReadingList>();
         public static List<Model.SignUp> signUp = new List<Model.SignUp>();
@@ -28,17 +28,11 @@ namespace NOTE_ID
         public static NoteIdJSON JsonClient = new NoteIdJSON();
         public App()
         {
-            //books.Add(new Book());
-            //quickNotes.Add(new QuickNote());
-            //readingLists.Add(new ReadingList());
-            //signUp.Add(new SignUp());
-            //toDoLists.Add(new ToDoList());
-
-
+           
             books = JsonClient.LoadList<Book>("Book.json");
-            //quickNotes = JsonClient.LoadList<QuickNote>("Book.json");
-            //readingLists = JsonClient.LoadList<ReadingList>("LoadList.json");
-            //signUp = JsonClient.LoadList<Model.SignUp>("SignUp.json");
+            quickNotes = JsonClient.LoadList<QuickNote>("QuickNote.json");
+            readingLists = JsonClient.LoadList<ReadingList>("ReadingList.json");
+            signUp = JsonClient.LoadList<Model.SignUp>("SignUp.json");
         }
 
         ~App()

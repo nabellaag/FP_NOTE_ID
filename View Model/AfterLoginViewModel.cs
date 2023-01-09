@@ -17,12 +17,14 @@ namespace NOTE_ID.View_Model
             bookRecommendationPage = new BookRecommendationPageViewModel();
             readingListPage = new ReadingListPageViewModel();
             profilePage = new ProfilePageViewModel();
+            toDoListPage = new ToDoListPageViewModel();
             currentView = gettingStartedPage;
             gettingStartedCommand = new CommandViewModel(x => CurrentView = gettingStartedPage);
             quickNoteCommand = new CommandViewModel(x => CurrentView = quickNotePage);
             bookRecommendationCommand = new CommandViewModel(x => CurrentView = bookRecommendationPage);
             readingListCommand = new CommandViewModel(x => CurrentView = readingListPage);
             profileCommand = new CommandViewModel(x=> CurrentView = profilePage);
+            toDoListCommand = new CommandViewModel(x => currentView = toDoListPage);
         }
         private object currentView;
         private GettingStartedPageViewModel gettingStartedPage;
@@ -30,6 +32,7 @@ namespace NOTE_ID.View_Model
         private BookRecommendationPageViewModel bookRecommendationPage;
         private ReadingListPageViewModel readingListPage;
         private ProfilePageViewModel profilePage;
+        private ToDoListPageViewModel toDoListPage;
         private ICommand gettingStartedCommand;
         private ICommand quickNoteCommand;
         private ICommand bookRecommendationCommand;
