@@ -32,10 +32,10 @@ namespace NOTE_ID.View
             Style style = this.FindResource("BookButton") as Style;
             for (int i = 0; i < 3; i++)
             {
-                BitmapImage bitmap = new BitmapImage();
-                bitmap.BeginInit();
-                bitmap.UriSource = new Uri(App.books[i].cover);
-                bitmap.EndInit();
+                //BitmapImage bitmap = new BitmapImage();
+                //bitmap.BeginInit();
+                //bitmap.UriSource = new Uri(App.books[i].cover);
+                //bitmap.EndInit();
 
                 Button button = new Button
                 {

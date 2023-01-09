@@ -25,7 +25,7 @@ namespace NOTE_ID.View_Model
             bookRecommendationCommand = new CommandViewModel(x => CurrentView = bookRecommendationPage);
             readingListCommand = new CommandViewModel(x => CurrentView = readingListPage);
             profileCommand = new CommandViewModel(x=> CurrentView = profilePage);
-            toDoListCommand = new CommandViewModel(x => currentView = toDoListPage);
+            toDoListCommand = new CommandViewModel(x => CurrentView = toDoListPage);
         }
         private object currentView;
         private GettingStartedPageViewModel gettingStartedPage;

@@ -12,9 +12,8 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="481*" />
-            <ColumnDefinition Width="19*" />
-            <ColumnDefinition Width="200*" />
+            <ColumnDefinition Width="357*" />
+            <ColumnDefinition Width="143*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
@@ -28,101 +27,174 @@
                Margin="20,0,0,0"
                FontSize="20"
                FontWeight="Bold"
-               VerticalAlignment="Center"
-               Grid.ColumnSpan="2" />
+               VerticalAlignment="Center" />
         <Border Grid.Row="1"
                 CornerRadius="16"
                 Background="#E5B04A"
-                Margin="20,20,20,20"
-                Grid.ColumnSpan="2">
-
-            <Button Content="+"
-                    Margin="916,10,16,134"
-                    Background="{x:Null}"
-                    FontWeight="Bold" />
+                Margin="20,20,20,20">
+            <Grid Grid.Row="1">
+                <Border CornerRadius="300"
+                        Margin="627,16,18,123"
+                        BorderBrush="Black"
+                        Width="25"
+                        Height="25"
+                        BorderThickness="1.25" />
+                <Button Content="+"
+                        FontSize="20"
+                        FontFamily="inter"
+                        FontWeight="Bold"
+                        Background="Transparent"
+                        Foreground="Black"
+                        Margin="631,16,22,125"
+                        BorderBrush="{x:Null}" />
+            </Grid>
         </Border>
-        <TextBox Margin="44,7,0,0"
-                 Grid.Row="1"
-                 TextWrapping="Wrap"
-                 Text="To Do"
-                 Width="156"
-                 Height="51"
-                 Background="#FF42B577"
-                 VerticalAlignment="Top"
-                 FontSize="20"
-                 FontWeight="Bold"
-                 Foreground="White"
-                 HorizontalAlignment="Left" />
+        <Grid Grid.Row="1"
+              Margin="0,0,27,0">
+            <Border CornerRadius="5"
+                    Width="100"
+                    Height="39"
+                    Margin="51,6,536,165"
+                    Background="#FF42B577"
+                    RenderTransformOrigin="-0.094,0.154">
+                <TextBox Grid.Row="1"
+                         TextWrapping="Wrap"
+                         Text="To Do"
+                         Width="100"
+                         Height="40"
+                         Background="Transparent"
+                         VerticalAlignment="Top"
+                         FontSize="20"
+                         FontWeight="Bold"
+                         Foreground="White"
+                         HorizontalAlignment="Left"
+                         RenderTransformOrigin="-0.16,-0.397"
+                         Margin="16,4,0,0"
+                         BorderBrush="{x:Null}" />
+            </Border>
+        </Grid>
 
         <CheckBox  Grid.Row="1"
                    Content="Clean The Room"
-                   Margin="44,82,8,105"
+                   Margin="44,82,35,105"
                    Checked="CheckBox_Checked" />
         <CheckBox  Grid.Row="1"
                    Content="Send Email to John"
-                   Margin="44,105,8,82" />
+                   Margin="44,104,35,83" />
+
 
         <Frame Name="BookFrame"
                Grid.Row="1"
                NavigationUIVisibility="Hidden"
-               Visibility="Hidden"
-               Grid.ColumnSpan="2" />
+               Visibility="Hidden" />
 
         <Border Grid.Row="2"
                 CornerRadius="16"
                 Background="#E5B04A"
-                Margin="20,20,20,20"
-                Grid.ColumnSpan="2">
+                Margin="20,20,20,20">
             <Button Content="+"
                     Margin="916,10,16,134"
                     Background="{x:Null}" />
         </Border>
-        <TextBox Margin="44,5,0,0"
-                 Grid.Row="2"
-                 TextWrapping="Wrap"
-                 Text="Doing"
-                 Width="156"
-                 Height="51"
-                 Background="#F886A8"
-                 VerticalAlignment="Top"
-                 FontSize="20"
-                 FontWeight="Bold"
-                 Foreground="White"
-                 HorizontalAlignment="Left" />
+        <Grid Grid.Row="2"
+              Margin="0,0,27,0">
+            <Border CornerRadius="5"
+                    Width="100"
+                    Height="39"
+                    Margin="51,6,536,165"
+                    Background="#F886A8"
+                    RenderTransformOrigin="-0.094,0.154">
+                <TextBox Grid.Row="1"
+                         TextWrapping="Wrap"
+                         Text="Doing"
+                         Width="100"
+                         Height="40"
+                         Background="Transparent"
+                         VerticalAlignment="Top"
+                         FontSize="20"
+                         FontWeight="Bold"
+                         Foreground="White"
+                         HorizontalAlignment="Left"
+                         RenderTransformOrigin="-0.16,-0.397"
+                         Margin="16,4,0,0"
+                         BorderBrush="{x:Null}" />
+            </Border>
+        </Grid>
         <CheckBox  Grid.Row="2"
                    Content="Dinner With Sarah"
-                   Margin="44,79,8,108" />
+                   Margin="44,79,35,108" />
 
         <Border Grid.Row="3"
                 CornerRadius="16"
                 Background="#E5B04A"
-                Margin="20,20,20,20"
-                Grid.ColumnSpan="2">
+                Margin="20,20,20,20" />
+        <Grid Grid.Row="2"
+              Margin="0,0,27,0">
+            <Border CornerRadius="300"
+                    Margin="652,39,10,146"
+                    BorderBrush="Black"
+                    Width="25"
+                    Height="25"
+                    BorderThickness="1.25" />
             <Button Content="+"
-                    Margin="916,10,16,134"
-                    Background="{x:Null}" />
-        </Border>
-        <TextBox Margin="44,0,0,0"
-                 Grid.Row="3"
-                 TextWrapping="Wrap"
-                 Text="Done"
-                 Width="156"
-                 Height="51"
-                 Background="#6F74BD"
-                 VerticalAlignment="Top"
-                 FontSize="20"
-                 FontWeight="Bold"
-                 Foreground="White"
-                 HorizontalAlignment="Left" />
+                    FontSize="20"
+                    FontFamily="inter"
+                    FontWeight="Bold"
+                    Background="Transparent"
+                    Foreground="Black"
+                    Margin="647,16,6,125"
+                    BorderBrush="{x:Null}" />
+        </Grid>
+
+        <Grid Grid.Row="3"
+              Margin="0,0,27,0">
+            <Border CornerRadius="5"
+                    Width="100"
+                    Height="39"
+                    Margin="51,6,536,165"
+                    Background="#6F74BD"
+                    RenderTransformOrigin="-0.094,0.154">
+                <TextBox Grid.Row="1"
+                         TextWrapping="Wrap"
+                         Text="Done"
+                         Width="100"
+                         Height="40"
+                         Background="Transparent"
+                         VerticalAlignment="Top"
+                         FontSize="20"
+                         FontWeight="Bold"
+                         Foreground="White"
+                         HorizontalAlignment="Left"
+                         RenderTransformOrigin="-0.16,-0.397"
+                         Margin="16,4,0,0"
+                         BorderBrush="{x:Null}" />
+            </Border>
+            <Grid Grid.Row="3">
+                <Border CornerRadius="300"
+                        Margin="652,39,10,146"
+                        BorderBrush="Black"
+                        Width="25"
+                        Height="25"
+                        BorderThickness="1.25" />
+                <Button Content="+"
+                        FontSize="20"
+                        FontFamily="inter"
+                        FontWeight="Bold"
+                        Background="Transparent"
+                        Foreground="Black"
+                        Margin="647,16,6,125"
+                        BorderBrush="{x:Null}" />
+            </Grid>
+        </Grid>
         <CheckBox  Grid.Row="3"
                    Content="Buy Groceries"
-                   Margin="44,79,8,108" />
+                   Margin="44,79,35,108" />
         <CheckBox  Grid.Row="3"
                    Content="Order New Bike"
-                   Margin="44,105,8,82" />
-        <Image Grid.Column="2"
-               Margin="32,116,0,12"
-               Grid.RowSpan="4"
+                   Margin="44,105,35,82" />
+        <Image Grid.Column="1"
+               Margin="58,116,0,20"
+               Grid.RowSpan="3"
                Grid.Row="1"
                Source="/Aset/Asset-TaskList.png"
                Stretch="Fill" />

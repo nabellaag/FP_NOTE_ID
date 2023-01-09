@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NOTE_ID.Model
 {
-    class ToDoList
+    public class ToDoList
     {
     }
 }
