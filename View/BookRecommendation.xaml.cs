@@ -33,9 +33,9 @@ namespace NOTE_ID.View
             for (int i = 0; i < 3; i++)
             {
                 BitmapImage bitmap = new BitmapImage();
-                //bitmap.BeginInit();
-                //bitmap.UriSource = new Uri(App.books[i].cover);
-                //bitmap.EndInit();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(App.books[i].cover);
+                bitmap.EndInit();
 
                 Button button = new Button
                 {
