@@ -163,6 +163,17 @@
                        Grid.Row="2"
                        RenderTransformOrigin="0.494,2.588"
                        Grid.Column="1" />
+                <Label Content="Wait, what about..."
+                       HorizontalAlignment="Left"
+                       Margin="10,-84,0,0"
+                       VerticalAlignment="Top"
+                       FontWeight="Bold"
+                       Foreground="#FF42B577"
+                       FontSize="48"
+                       FontFamily="Inter"
+                       Height="63"
+                       Width="493"
+                       Grid.ColumnSpan="2" />
 
 
             </Grid>
