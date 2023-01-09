@@ -13,6 +13,7 @@ namespace NOTE_ID.View_Model
         private ICommand fAQViewCommand;
         private ICommand aboutViewCommand;
         private ICommand loginViewCommand;
+        private ICommand toDoListCommand;
         private object currentView;
         private AboutPageViewModel aboutPage;
         private FAQPageViewModel fAQPage;
