@@ -104,6 +104,7 @@ namespace NOTE_ID.View_Model
         
         
         }
+        public Action CloseWindow1 { get; set; }
 
         public MainViewModel()
         {

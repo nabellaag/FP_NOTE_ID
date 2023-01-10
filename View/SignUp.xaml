@@ -54,7 +54,8 @@
                                Margin="0,30,0,0" />
                     <TextBox Width="415"
                              Height="45"
-                             BorderBrush="#E6B24B"
+                             BorderBrush="{Binding EmailBrush}"
+                             Text="{Binding Email}"
                              BorderThickness="1.5"
                              Margin="0,57,114,14">
                         <TextBox.Resources>
@@ -74,9 +75,10 @@
                                Margin="0,30,0,0" />
                     <TextBox Width="415"
                              Height="45"
-                             BorderBrush="#E6B24B"
+                             BorderBrush="{Binding UserNameBrush}"
                              BorderThickness="1.5"
-                             Margin="0,57,114,14">
+                             Margin="0,57,114,14"
+                             Text="{Binding UserName}">
                         <TextBox.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius"
@@ -94,9 +96,10 @@
                                Margin="0,30,0,0" />
                     <TextBox Width="415"
                              Height="45"
-                             BorderBrush="#E6B24B"
+                             BorderBrush="{Binding PasswordBrush}"
                              BorderThickness="1.5"
-                             Margin="0,57,114,14">
+                             Margin="0,57,114,14"
+                             Text="{Binding Password}">
                         <TextBox.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius"
@@ -114,9 +117,10 @@
                                Margin="0,30,0,0" />
                     <TextBox Width="415"
                              Height="45"
-                             BorderBrush="#E6B24B"
+                             BorderBrush="{Binding ConfirmPasswordBrush}"
                              BorderThickness="1.5"
-                             Margin="0,57,114,14">
+                             Margin="0,57,114,14"
+                             Text="{Binding ConfirmPassword}">
                         <TextBox.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius"
@@ -151,7 +155,8 @@
                             Background="Transparent"
                             Foreground="White"
                             Margin="154,15,239,23"
-                            BorderBrush="{x:Null}" />
+                            BorderBrush="{x:Null}"
+                            Command="{Binding SignUpCommand}"/>
                 </Grid>
                 <Grid Grid.Row="7">
                     <Button Content="Already have an account? Login"

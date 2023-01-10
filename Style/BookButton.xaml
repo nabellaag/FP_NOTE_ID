@@ -9,7 +9,7 @@
                         <Grid>
                             <Border Width="{TemplateBinding Width}"
                                     Height="{TemplateBinding Height}"
-                                    CornerRadius="16"
+                                    CornerRadius="0"
                                     Background="{TemplateBinding Background}">
                                 <Label Content="{TemplateBinding Content}"/>
                             </Border>

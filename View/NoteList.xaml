@@ -8,7 +8,7 @@
       d:DesignHeight="764" d:DesignWidth="1000"
       Title="NoteList">
 
-    <Grid>
+    <Grid Margin="0,100,0,0">
         <ScrollViewer>
             <StackPanel Name="NoteSP"/>
         </ScrollViewer>

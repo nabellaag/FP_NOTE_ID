@@ -4,11 +4,15 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:NOTE_ID"
+      xmlns:viewModel="clr-namespace:NOTE_ID.View_Model"
       mc:Ignorable="d"
       d:DesignHeight="762"
       d:DesignWidth="1280"
       Title="Login"
       Background="#FFFCF7E9">
+    <Page.DataContext>
+        <viewModel:LoginViewModel/>
+    </Page.DataContext>
     
     <Grid>
         <Grid.ColumnDefinitions>
@@ -39,7 +43,7 @@
                            Margin="0,120,66,10" />
             </Grid>
             <Grid Grid.Row="1">
-                <TextBlock Text="Email / Phone Number"
+                <TextBlock Text="Email"
                            FontSize="16"
                            FontFamily="inter"
                            FontWeight="Regular"
@@ -49,7 +53,8 @@
                          Height="45"
                          BorderBrush="#E6B24B"
                          BorderThickness="1.5"
-                         Margin="0,57,114,14">
+                         Margin="0,57,114,14"
+                         Text="{Binding EmailOrPhoneField}">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius"
@@ -69,7 +74,8 @@
                          Height="45"
                          BorderBrush="#E6B24B"
                          BorderThickness="1.5"
-                         Margin="0,57,114,14">
+                         Margin="0,57,114,14"
+                         Text="{Binding PasswordField}">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius"
@@ -77,16 +83,6 @@
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <Button Content="Forgot Password?"
-                        FontSize="13"
-                        FontFamily="inter"
-                        FontWeight="Regular"
-                        Height="36"
-                        Background="{x:Null}"
-                        Foreground="#FF5A6199"
-                        Margin="263,113,50,-37"
-                        BorderBrush="{x:Null}"
-                        RenderTransformOrigin="0.642,0.572" />
             </Grid>
             <Grid Grid.Row="3">
                 <CheckBox Height="16"
@@ -114,7 +110,7 @@
                         Background="Transparent"
                         Foreground="White"
                         Margin="154,15,239,23"
-                      />
+                        Command="{Binding LoginCommand}"                      />
             </Grid>
             <Grid Grid.Row="5">
                 <Button Content="Don't have an acount? Sign Up"
@@ -126,7 +122,7 @@
                         Foreground="#FF5A6199"
                         Margin="111,17,196,25"
                         BorderBrush="{x:Null}"
-                        RenderTransformOrigin="0.642,0.572" />
+                        RenderTransformOrigin="0.642,0.572"/>
             </Grid>
 
 

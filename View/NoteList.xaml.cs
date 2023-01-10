@@ -23,6 +23,7 @@ namespace NOTE_ID.View
         public NoteList()
         {
             InitializeComponent();
+            SetList();
         }
 
         private void SetList()
@@ -34,7 +35,7 @@ namespace NOTE_ID.View
                 Button button = new Button
                 {
                     Width = 800,
-                    Height = 60,
+                    Height = 30,
                     Margin = new Thickness(20),
                     Tag = i,
                     Content = App.quickNotes[i].Title,
