@@ -46,22 +46,8 @@
                             Background="Transparent"
                             BorderThickness="0" 
                             Command ="{Binding NewReadingListCommand}"/>
-                    <DataGrid Grid.Row="1">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Header="Title Book"
-                                                Width="*" />
-                            <DataGridTextColumn Header="Date"
-                                                Width="*" />
-                            <DataGridTextColumn Header="Type"
-                                                Width="*" />
-                            <DataGridTextColumn Header="Author"
-                                                Width="*" />
-                            <DataGridTextColumn Header="Publisher"
-                                                Width="*" />
-                            <DataGridTextColumn Header="Status"
-                                                Width="*" />
-
-                        </DataGrid.Columns>
+                    <DataGrid Grid.Row="1"
+                              Name="readingListDataGrid">
                     </DataGrid>
                 </Grid>
             </Border>
