@@ -12,7 +12,7 @@ namespace NOTE_ID.Model
         public string deskripsi { get; set; }
         public string judul { get; set; }
         public string cover { get; set; }
-        public int rating { get; set; }
+        public string rating { get; set; }
         public int jmlhal { get; set; }
         public DateTime tgl { get; set; }
         public string isbn { get; set; }

@@ -23,6 +23,7 @@ namespace NOTE_ID.View
         public ReadingList()
         {
             InitializeComponent();
+            readingListDataGrid.ItemsSource = App.readingLists;
         }
     }
 }
