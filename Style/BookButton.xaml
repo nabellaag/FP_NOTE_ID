@@ -11,6 +11,7 @@
                                     Height="{TemplateBinding Height}"
                                     CornerRadius="16"
                                     Background="{TemplateBinding Background}">
+                                <Label Content="{TemplateBinding Content}"/>
                             </Border>
                         </Grid>
                         

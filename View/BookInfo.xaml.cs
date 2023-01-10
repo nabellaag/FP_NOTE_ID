@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NOTE_ID.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,10 +22,13 @@ namespace NOTE_ID.View
     public partial class BookInfo : Page
     {
         Frame frame;
-        public BookInfo(Frame frame)
+        Book book;
+        public BookInfo(Book book, Frame frame)
         {
             InitializeComponent();
+            this.book = book;
             this.frame = frame;
+            SetBookInfo();
             SetBooksRec();
         }
 
@@ -45,15 +49,31 @@ namespace NOTE_ID.View
                     Height = 150,
                     Margin = new Thickness(20),
                     Tag = i,
-                    Name = "sdsfsdf",
                     Content = App.books[i].nama,
                     Background = new ImageBrush(bitmap),
                     Style = style
                 };
 
-                //button.Click += new RoutedEventHandler(Book_Click);
+                button.Click += new RoutedEventHandler(Book_Click);
                 BooksSP2.Children.Add(button);
             }
+        }
+
+        private void SetBookInfo()
+        {
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri(book.cover);
+            bitmap.EndInit();
+
+            BookCover.Source = bitmap;
+            Judul.Content = book.judul;
+            BookDesc.Text = book.deskripsi;
+            JumlahHalaman.Content = book.jmlhal;
+            TanggalTerbit.Content = book.tgl;
+            ISBN.Content = book.isbn;
+            Penerbit.Content = book.penerbit;
+            Bahasa.Content = book.bahasa;
         }
 
         private void DescButt_Click(object sender, RoutedEventArgs e)
@@ -64,6 +84,12 @@ namespace NOTE_ID.View
         private void DetailButt_Click(object sender, RoutedEventArgs e)
         {
             Detail.Visibility = Visibility.Visible;
+        }
+
+        private void Book_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new BookInfo(App.books[(int)(sender as Button).Tag], frame));
+
         }
     }
 }
