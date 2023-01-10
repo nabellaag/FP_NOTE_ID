@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NOTE_ID.View;
+using NOTE_ID.View_Model;
 
 namespace NOTE_ID
 {
@@ -24,6 +25,7 @@ namespace NOTE_ID
         public MainWindow()
         {
             InitializeComponent();
+            (DataContext as LoginViewModel).CloseWindow = () => Close();
         }
 
         private void Login_CLick(object sender, RoutedEventArgs e)

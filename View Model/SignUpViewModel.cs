@@ -11,11 +11,15 @@ namespace NOTE_ID.View_Model
 {
     internal class SignUpViewModel : BaseViewModel
     {
-        private string userName;
-        private string password;
-        private string email;
-        private string confirmPassword;
-        private string errorMessage;
+        public SignUpViewModel()
+        {
+            signUpCommand = new CommandViewModel(ExecuteSignUpCommand, CanExecuteSignUpCommand);
+        }
+        private string userName = String.Empty;
+        private string password = String.Empty;
+        private string email = String.Empty;
+        private string confirmPassword = String.Empty;
+        private string errorMessage = String.Empty;
         private static Brush defaultBrush = (Brush)(new BrushConverter()).ConvertFromString("#FFE3AE49");
         private Brush userNameBrush = defaultBrush;
         private Brush passwordBrush = defaultBrush;
@@ -111,32 +115,36 @@ namespace NOTE_ID.View_Model
             }
         }
 
-        private bool CanExecuteLoginCommand(object obj)
+        private bool CanExecuteSignUpCommand(object obj)
         {
             string emailPattern = @"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
-            if (!Regex.IsMatch(email, emailPattern))
+            if (!Regex.IsMatch(Email, emailPattern))
             {
                 EmailBrush = Brushes.Red;
                 return false;
             }
+            EmailBrush = defaultBrush;
             if (UserName.Length < 4)
             {
                 UserNameBrush = Brushes.Red;
                 return false;
             }
+            UserNameBrush = defaultBrush;
             if (Password.Length < 4)
             {
                 PasswordBrush = Brushes.Red;
                 return false;
             }
+            PasswordBrush = defaultBrush;
             if (ConfirmPassword != Password)
             {
                 ConfirmPasswordBrush = Brushes.Red;
                 return false;
             }
+            ConfirmPasswordBrush = defaultBrush;
             return true;
         }
-        private void ExecuteLoginCommand(object obj)
+        private void ExecuteSignUpCommand(object obj)
         {
             Model.SignUp signUp = new()
             {
@@ -145,6 +153,10 @@ namespace NOTE_ID.View_Model
                 Username = UserName,
             };
             App.signUp.Add(signUp);
+            Email = string.Empty;
+            UserName = String.Empty;
+            Password = string.Empty;
+            ConfirmPassword = String.Empty;
         }
     }
 }

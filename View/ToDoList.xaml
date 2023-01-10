@@ -33,22 +33,7 @@
                 Background="#E5B04A"
                 Margin="20,20,20,20">
             <Grid Grid.Row="1">
-                <Border CornerRadius="300"
-                        Margin="627,16,18,123"
-                        BorderBrush="Black"
-                        Width="25"
-                        Height="25"
-                        BorderThickness="1.25" />
-                <Button Content="+"
-                        Width="25"
-                        Height="25"
-                        FontSize="20"
-                        FontFamily="inter"
-                        FontWeight="Bold"
-                        Background="Transparent"
-                        Foreground="Black"
-                        Margin="629,18,20,127"
-                        BorderBrush="{x:Null}" />
+                
             </Grid>
         </Border>
         <Grid Grid.Row="1"
@@ -133,22 +118,7 @@
                 Margin="20,20,20,20" />
         <Grid Grid.Row="2"
               Margin="0,0,27,0">
-            <Border CornerRadius="300"
-                    Margin="652,39,10,146"
-                    BorderBrush="Black"
-                    Width="25"
-                    Height="25"
-                    BorderThickness="1.25" />
-            <Button Width="25"
-                    Height="25"
-                    Content="+"
-                    FontSize="20"
-                    FontFamily="inter"
-                    FontWeight="Bold"
-                    Background="Transparent"
-                    Foreground="Black"
-                    Margin="647,16,6,125"
-                    BorderBrush="{x:Null}" />
+            
         </Grid>
 
         <Grid Grid.Row="3"
@@ -175,22 +145,7 @@
                          BorderBrush="{x:Null}" />
             </Border>
             <Grid Grid.Row="3">
-                <Border CornerRadius="300"
-                        Margin="652,39,10,146"
-                        BorderBrush="Black"
-                        Width="25"
-                        Height="25"
-                        BorderThickness="1.25" />
-                <Button Width="25"
-                        Height="25"
-                        Content="+"
-                        FontSize="20"
-                        FontFamily="inter"
-                        FontWeight="Bold"
-                        Background="Transparent"
-                        Foreground="Black"
-                        Margin="647,16,6,125"
-                        BorderBrush="{x:Null}" />
+               
             </Grid>
         </Grid>
         <CheckBox  Grid.Row="3"
