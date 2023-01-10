@@ -83,11 +83,13 @@
                 </Grid>
                 
 
-                <Button Grid.Row="2"
+                <Button Name="SaveButton"
+                        Grid.Row="2"
                         Width="100"
                         HorizontalAlignment="Right"
                         Content="Save"
-                        Margin="10"/>
+                        Margin="10"
+                        Click="SaveButton_Click"/>
 
             </Grid>
         </Border>

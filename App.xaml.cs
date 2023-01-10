@@ -26,14 +26,15 @@ namespace NOTE_ID
         public static List<ToDoList> toDoList = new List<ToDoList>();
 
         public static NoteIdJSON JsonClient = new NoteIdJSON();
+
         public App()
         {
             toDoList.Add(new ToDoList());
             books = JsonClient.LoadList<Book>("Book.json");
-            quickNotes = JsonClient.LoadList<QuickNote>("QuickNote.json");
-            readingLists = JsonClient.LoadList<ReadingList>("ReadingList.json");
-            signUp = JsonClient.LoadList<Model.SignUp>("SignUp.json");
-            toDoList = JsonClient.LoadList<ToDoList>("ToDoList.json");
+            //quickNotes = JsonClient.LoadList<QuickNote>("QuickNote.json");
+            //readingLists = JsonClient.LoadList<ReadingList>("ReadingList.json");
+            //signUp = JsonClient.LoadList<Model.SignUp>("SignUp.json");
+            //toDoList = JsonClient.LoadList<ToDoList>("ToDoList.json");
         }
         public void SaveJson()
         {
