@@ -13,12 +13,13 @@ namespace NOTE_ID.View_Model
     {
         public LoginViewModel()
         {
-            LoginCommand = new CommandViewModel(ExecuteLoginCommand, CanExecuteLoginCommand);
+            loginCommand = new CommandViewModel(ExecuteLoginCommand, CanExecuteLoginCommand);
         }
         private string emailOrPhoneField = String.Empty;
         private string passwordField = String.Empty;
-        private ICommand LoginCommand { get;set; }
+        public ICommand LoginCommand { get => loginCommand; set => loginCommand = value; }
         private string errorMessage;
+        private ICommand loginCommand;
 
         public string EmailOrPhoneField
         {
@@ -50,24 +51,15 @@ namespace NOTE_ID.View_Model
 
         private bool CanExecuteLoginCommand(object obj)
         {
-            string emailPattern = @"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
-            if (Regex.IsMatch(EmailOrPhoneField, emailPattern)) return false;
             if (PasswordField.Length < 4) return false;
             return true;
         }
         private void ExecuteLoginCommand(object obj)
         {
-            Model.SignUp signUp;
-            if (App.signUp.Any(x=> x.Email.ToLower() == EmailOrPhoneField.ToLower()))
-            {
-                signUp = App.signUp.Where(x=> x.Email.ToLower() == EmailOrPhoneField.ToLower()).FirstOrDefault();
-                if (signUp.Password == PasswordField)
-                {
-                    AfterLoginWindow afterLoginWindow = new AfterLoginWindow();
-                    CloseWindow();
-                    afterLoginWindow.Show();
-                }
-            }
+            AfterLoginWindow afterLoginWindow = new AfterLoginWindow();
+            afterLoginWindow.Show();
+            PasswordField = String.Empty;
+            EmailOrPhoneField = String.Empty;
         }
     }
 }

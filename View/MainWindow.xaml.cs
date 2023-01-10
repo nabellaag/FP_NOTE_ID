@@ -25,7 +25,7 @@ namespace NOTE_ID
         public MainWindow()
         {
             InitializeComponent();
-            (DataContext as LoginViewModel).CloseWindow = () => Close();
+            (DataContext as MainViewModel).CloseWindow1 = () => Close();
         }
 
         private void Login_CLick(object sender, RoutedEventArgs e)
