@@ -11,8 +11,14 @@
                 <ResourceDictionary Source="/Style/MenuRadioButton.xaml"/>
                 <ResourceDictionary Source="/Style/BookButton.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type viewModel:MainViewModel}">
+                <local:MainWindow/>
+            </DataTemplate>
             <DataTemplate DataType="{x:Type viewModel:AboutPageViewModel}">
                 <local:About/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:SignUpPageViewModel}">
+                <local:SignUp />
             </DataTemplate>
             <DataTemplate DataType="{x:Type viewModel:FAQPageViewModel}">
                 <local:FAQ/>
@@ -28,6 +34,18 @@
             </DataTemplate>
             <DataTemplate DataType="{x:Type viewModel:GettingStartedPageViewModel}">
                 <view:GettingStarted/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:QuickNotePageViewModel}">
+                <view:QuickNote/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:BookRecommendationPageViewModel}">
+                <view:BookRecommendation/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:ReadingListPageViewModel}">
+                <view:ReadingList/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:ProfilePageViewModel}">
+                <view:Profile/>
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>

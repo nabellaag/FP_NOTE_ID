@@ -22,7 +22,6 @@ namespace NOTE_ID.View
         public AfterLoginWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new BookRecommendation());
         }
     }
 }

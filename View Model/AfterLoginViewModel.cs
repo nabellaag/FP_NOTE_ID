@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NOTE_ID.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -13,18 +14,39 @@ namespace NOTE_ID.View_Model
         public AfterLoginViewModel()
         {
             gettingStartedPage = new GettingStartedPageViewModel();
+            quickNotePage = new QuickNotePageViewModel();
+            bookRecommendationPage = new BookRecommendationPageViewModel();
+            readingListPage = new ReadingListPageViewModel();
+            profilePage = new ProfilePageViewModel();
+            toDoListPage = new ToDoListPageViewModel();
             currentView = gettingStartedPage;
             gettingStartedCommand = new CommandViewModel(x => CurrentView = gettingStartedPage);
+            quickNoteCommand = new CommandViewModel(x => CurrentView = quickNotePage);
+            bookRecommendationCommand = new CommandViewModel(x => CurrentView = bookRecommendationPage);
+            readingListCommand = new CommandViewModel(x => CurrentView = readingListPage);
+            profileCommand = new CommandViewModel(x=> CurrentView = profilePage);
+            toDoListCommand = new CommandViewModel(x => CurrentView = toDoListPage);
         }
         private object currentView;
         private GettingStartedPageViewModel gettingStartedPage;
+        private QuickNotePageViewModel quickNotePage;
+        private BookRecommendationPageViewModel bookRecommendationPage;
+        private ReadingListPageViewModel readingListPage;
+        private ProfilePageViewModel profilePage;
+        private ToDoListPageViewModel toDoListPage;
         private ICommand gettingStartedCommand;
+        private ICommand quickNoteCommand;
+        private ICommand bookRecommendationCommand;
+        private ICommand toDoListCommand;
+        private ICommand readingListCommand;
+        private ICommand profileCommand;
 
         public ICommand GettingStartedCommand { get => gettingStartedCommand; set => gettingStartedCommand = value; }
-        public ICommand QuickNoteCommand { get; set; }
-        public ICommand BookRecommendationCommand { get; set; }
-        public ICommand ToDoListCommand { get; set; }
-        public ICommand ReadingListCommand { get; set; }
+        public ICommand QuickNoteCommand { get => quickNoteCommand; set => quickNoteCommand = value; }
+        public ICommand BookRecommendationCommand { get => bookRecommendationCommand; set => bookRecommendationCommand = value; }
+        public ICommand ToDoListCommand { get => toDoListCommand; set => toDoListCommand = value; }
+        public ICommand ReadingListCommand { get => readingListCommand; set => readingListCommand = value; }
+        public ICommand ProfileCommand { get => profileCommand; set => profileCommand = value; }
         public object CurrentView
         {
             get => currentView;

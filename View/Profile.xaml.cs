@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace NOTE_ID.View
 {
     /// <summary>
-    /// Interaction logic for QuickNote.xaml
+    /// Interaction logic for Profile.xaml
     /// </summary>
-    public partial class QuickNote : Page
+    public partial class Profile : Page
     {
-        public QuickNote()
+        public Profile()
         {
             InitializeComponent();
-        }
-
-        private void Text_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

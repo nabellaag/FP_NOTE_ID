@@ -187,7 +187,8 @@
                         FontFamily="Inter"
                         FontSize="20"
                         FontWeight="Medium"
-                        BorderBrush="{x:Null}" />
+                        BorderBrush="{x:Null}"
+                        Command="{Binding ProductViewCommand}"/>
             </Grid>
             
             <Grid Grid.Column="5">
@@ -221,7 +222,8 @@
                         Foreground="White"
                         Width="135"
                         Height="36"
-                        BorderBrush="{x:Null}" />
+                        BorderBrush="{x:Null}"
+                        Command ="{Binding SignUpViewCommand}"/>
             </Grid>
         </Grid>
     </Grid>

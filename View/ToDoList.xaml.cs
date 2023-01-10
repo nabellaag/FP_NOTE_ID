@@ -16,16 +16,16 @@ using System.Windows.Shapes;
 namespace NOTE_ID.View
 {
     /// <summary>
-    /// Interaction logic for QuickNote.xaml
+    /// Interaction logic for ToDoList.xaml
     /// </summary>
-    public partial class QuickNote : Page
+    public partial class ToDoList : Page
     {
-        public QuickNote()
+        public ToDoList()
         {
             InitializeComponent();
         }
 
-        private void Text_TextChanged(object sender, TextChangedEventArgs e)
+        private void CheckBox_Checked ( object sender,RoutedEventArgs e )
         {
 
         }

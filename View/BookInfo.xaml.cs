@@ -32,12 +32,12 @@ namespace NOTE_ID.View
         {
             //if (App.books.Count < 1) { return; }
             Style style = this.FindResource("BookButton") as Style;
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < App.books.Count(); i++)
             {
                 BitmapImage bitmap = new BitmapImage();
-                //bitmap.BeginInit();
-                //bitmap.UriSource = new Uri(App.books[i].cover);
-                //bitmap.EndInit();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(App.books[i].cover);
+                bitmap.EndInit();
 
                 Button button = new Button
                 {
@@ -46,8 +46,8 @@ namespace NOTE_ID.View
                     Margin = new Thickness(20),
                     Tag = i,
                     Name = "sdsfsdf",
-                    //Content = App.books[i].nama,
-                    //Background = new ImageBrush(bitmap),
+                    Content = App.books[i].nama,
+                    Background = new ImageBrush(bitmap),
                     Style = style
                 };
 
