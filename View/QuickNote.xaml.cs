@@ -20,14 +20,35 @@ namespace NOTE_ID.View
     /// </summary>
     public partial class QuickNote : Page
     {
-        public QuickNote()
+        Model.QuickNote quickNote;
+        Frame frame;
+        public QuickNote(Model.QuickNote quickNote, Frame frame)
         {
             InitializeComponent();
+            this.quickNote = quickNote;
+            this.frame = frame;
+
+            if (quickNote != null) SetNote();
+
         }
 
-        private void Text_TextChanged(object sender, TextChangedEventArgs e)
+        private void SetNote()
         {
+            Title.Text = quickNote.Title;
+            Text.Text = quickNote.Text;
+        }
 
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Title.Text) || string.IsNullOrWhiteSpace(Text.Text))
+            {
+                MessageBox.Show("Judul atau Text kosong");
+                return;
+            }
+            App.quickNotes.Add(new Model.QuickNote(Title.Text, Text.Text));
+
+            frame.GoBack();
+            while(frame.CanGoBack) frame.RemoveBackEntry();
         }
     }
 }

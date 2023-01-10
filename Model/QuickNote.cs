@@ -10,7 +10,10 @@ namespace NOTE_ID.Model
     {
         public string Title { get; set; }
         public string Text { get; set; }
-        
-
+        public QuickNote(string Title, string text)
+        {
+            this.Title = Title;
+            this.Text = text;
+        }
     }
 }

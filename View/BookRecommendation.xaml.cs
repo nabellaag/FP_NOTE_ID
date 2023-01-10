@@ -43,7 +43,6 @@ namespace NOTE_ID.View
                     Height = 360,
                     Margin = new Thickness(20),
                     Tag = i,
-                    Name = "sdsfsdf",
                     Content = App.books[i].nama,
                     Background = new ImageBrush(bitmap),
                     Style = style
@@ -57,7 +56,7 @@ namespace NOTE_ID.View
         private void Book_Click(object sender, RoutedEventArgs e)
         {
             BookFrame.Visibility = Visibility.Visible;
-            BookFrame.Navigate(new BookInfo(BookFrame));
+            BookFrame.Navigate(new BookInfo(App.books[(int)(sender as Button).Tag] ,BookFrame));
         }
     }
 }
