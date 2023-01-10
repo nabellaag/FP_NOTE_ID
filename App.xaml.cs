@@ -18,13 +18,13 @@ namespace NOTE_ID
     /// </summary>
     public partial class App : Application
     {
-     
         public static List<Book> books = new List<Book>();
         public static List<QuickNote> quickNotes = new List<QuickNote>();
         public static NoteIdJSON JsonClient = new NoteIdJSON();
+
         public App()
         {
-
+            books = JsonClient.LoadList<Book>("Book.json");
         }
 
         ~App()
