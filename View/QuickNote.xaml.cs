@@ -47,8 +47,7 @@ namespace NOTE_ID.View
             }
             App.quickNotes.Add(new Model.QuickNote(Title.Text, Text.Text));
 
-            frame.GoBack();
-            while(frame.CanGoBack) frame.RemoveBackEntry();
+            frame.Content = null;
         }
     }
 }
