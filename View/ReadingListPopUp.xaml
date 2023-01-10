@@ -52,7 +52,8 @@
                              Height="30"
                              Margin="0,0,0,0"
                              Background="Transparent"
-                             BorderThickness="0">
+                             BorderThickness="0"
+                             Name="titleBox">
                     </TextBox>
                 </Border>
             </StackPanel>
@@ -77,7 +78,8 @@
                              Height="30"
                              Margin="0,0,0,0"
                              Background="Transparent"
-                             BorderThickness="0">
+                             BorderThickness="0"
+                             Name="dateBox">
                     </TextBox>
                 </Border>
             </StackPanel>
@@ -103,7 +105,8 @@
                              Height="30"
                              Margin="0,0,0,0"
                              Background="Transparent"
-                             BorderThickness="0">
+                             BorderThickness="0"
+                             Name="typeBox">
                     </TextBox>
                 </Border>
             </StackPanel>
@@ -129,7 +132,8 @@
                              Height="30"
                              Margin="0,0,0,0"
                              Background="Transparent"
-                             BorderThickness="0">
+                             BorderThickness="0"
+                             Name="authorBox">
                     </TextBox>
                 </Border>
             </StackPanel>
@@ -155,7 +159,8 @@
                              Height="30"
                              Margin="0,0,0,0"
                              Background="Transparent"
-                             BorderThickness="0">
+                             BorderThickness="0"
+                             Name="publisherBox">
                     </TextBox>
                 </Border>
             </StackPanel>
@@ -181,7 +186,8 @@
                                Height="30"
                                Margin="0,0,0,0"
                                Background="Transparent"
-                               BorderThickness="0">
+                               BorderThickness="0"
+                               Name="statusComboBox">
                         <ComboBoxItem>Finished</ComboBoxItem>
                         <ComboBoxItem>Not Yet</ComboBoxItem>
                     </ComboBox>
@@ -211,7 +217,7 @@
                         VerticalAlignment="Center"
                         Margin="0,0,120,0"
                         Content =" Save"
-                        Background="#F0B036">
+                        Background="#F0B036" Click="Button_Click">
                     
                     
                 </Button>
