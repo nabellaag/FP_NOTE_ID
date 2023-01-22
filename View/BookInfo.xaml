@@ -24,8 +24,10 @@
             <Border Grid.Row="1"
                     CornerRadius="16"
                     VerticalAlignment="Stretch"
-                    Background="#E5B04A"
                     Margin="20">
+                <Border.Background>
+                    <SolidColorBrush Color="#FFE5B04A" Opacity="0.77"/>
+                </Border.Background>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="300"/>
@@ -44,28 +46,33 @@
                         </Grid.RowDefinitions>
 
                         <StackPanel Orientation="Horizontal">
-                            <Grid Width="100" Height="50"
+                            <Grid Width="100" Height="40"
                                     Margin="10">
                                 <RadioButton Name="DescButt"
                                              Style="{StaticResource MenuRadioButton}"
                                              GroupName="InfoButt"
                                              IsChecked="True"
-                                             Click="DescButt_Click"/>
+                                             Click="DescButt_Click" 
+                                             Background="#FFDFA12C"/>
                                 <Label Content="Deskripsi"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Center"
-                                       IsHitTestVisible="False"/>
+                                       
+                                       IsHitTestVisible="False" 
+                                       FontWeight="Bold"/>
                             </Grid>
-                            <Grid Width="100" Height="50"
+                            <Grid Width="100" Height="40"
                                   Margin="10">
                                 <RadioButton Name="DetailButt"
                                              Style="{StaticResource MenuRadioButton}"
                                              GroupName="InfoButt"
-                                             Click="DetailButt_Click"/>
+                                             Click="DetailButt_Click"
+                                             Background="#FFDFA12C"/>
                                 <Label Content="Detail"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Center"
-                                       IsHitTestVisible="False"/>
+                                       IsHitTestVisible="False"
+                                       FontWeight="Bold"/>
                             </Grid>
                         </StackPanel>
 
@@ -109,7 +116,7 @@
                             </Border>
                         </Grid>
                     </Grid>
-                
+
                 </Grid>
             </Border>
         </Grid>
@@ -119,7 +126,7 @@
                     Orientation="Horizontal"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch" />
-        
+
         <StackPanel Grid.Row="2">
             <Label Content="Similar E-books" />
         </StackPanel>
