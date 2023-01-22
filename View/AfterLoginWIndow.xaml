@@ -123,7 +123,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Label Content="Morning, Abdurahman"
+                <Label Content="Morning, Farhan"
                        VerticalAlignment="Center"/>
                 <Label Grid.Row="1"
                        Content="Welcome back, nice to see you again!"
@@ -165,7 +165,7 @@
                             <Image Source="/Aset/Pict-FarhanAvatar.png"/>
                         </Grid>
                     </Border>
-                    <Label Content="Abdurahman Khalid"
+                    <Label Content="Farhan"
                        VerticalAlignment="Center"/>
                 </StackPanel>
             </Button>

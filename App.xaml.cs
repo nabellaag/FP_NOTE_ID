@@ -28,18 +28,22 @@ namespace NOTE_ID
         public static NoteIdJSON JsonClient = new NoteIdJSON();
 
         public App()
-        {
+        {   
+            
             toDoList.Add(new ToDoList());
             books = JsonClient.LoadList<Book>("Book.json");
+            
             
             quickNotes = JsonClient.LoadList<QuickNote>("QuickNote.json");
             //quickNotes.Add(new QuickNote(null, null));
             readingLists = JsonClient.LoadList<ReadingList>("ReadingList.json");
             signUp = JsonClient.LoadList<Model.SignUp>("SignUp.json");
             toDoList = JsonClient.LoadList<ToDoList>("ToDoList.json");
+            
         }
         public void SaveJson()
         {
+            
             JsonClient.SaveList(books, "Book.json");
             JsonClient.SaveList(quickNotes, "QuickNote.json");
             JsonClient.SaveList(readingLists, "ReadingList.json");
@@ -50,7 +54,7 @@ namespace NOTE_ID
  
         ~App()
         {
-            
+
         }
 
         private void Application_Exit(object sender, ExitEventArgs e)

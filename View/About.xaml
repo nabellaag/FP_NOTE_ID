@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:NOTE_ID"
       mc:Ignorable="d"
       Title="About"
-      Height="832"
+      Height="762"
       Width="1280"
       Background="#FFFCF7E9">
     <Page.Resources>
@@ -84,18 +84,14 @@
 
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="762" />
-
-        </Grid.RowDefinitions>
-
-
-        <Grid Grid.Row="1"
-              Grid.RowSpan="2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1280*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
             <Image Source="/Aset/Asset-About3.png"
-                   Margin="1,291,-1,-140" />
+                   Margin="1,291,-1,-4" />
             <Image Source="/Aset/Pict-About.png"
-                   Height="577"
+                   Height="418"
                    VerticalAlignment="Top"
                    Margin="336,52,336,0" />
             <TextBlock HorizontalAlignment="Left"
@@ -104,7 +100,7 @@
                        Foreground="White"
                        FontSize="24"
                        FontFamily="Inter"
-                       Margin="303,553,0,0">
+                       Margin="321,507,0,0">
                        <Run Text="Sebuah student planner yang memiliki banyak fitur" /><LineBreak /><Run Text="menarik didalamnya.                        " /><LineBreak /><Run Text="Kamu dapat mengaksesnya dimanapun dan kapanpun." /></TextBlock>
             <TextBlock HorizontalAlignment="Left"
                        TextWrapping="Wrap"
@@ -112,23 +108,23 @@
                        VerticalAlignment="Top"
                        FontSize="24"
                        Foreground="White"
-                       Margin="303,682,0,0" />
+                       Margin="303,609,0,0" />
             <Image Source="/Aset/Instagram.png"
                    Height="38"
                    Width="38"
-                   Margin="303,722,0,0"
+                   Margin="303,668,0,0"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Left" />
             <Image Source="/Aset/Twitter.png"
                    Height="36"
                    Width="45"
-                   Margin="373,723,0,0"
+                   Margin="379,669,0,0"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Left" />
             <Image Source="/Aset/Whatsapp.png"
                    Height="38"
                    Width="38"
-                   Margin="443,722,0,0"
+                   Margin="453,667,0,0"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Left" />
             <Image Source="/Aset/Asset-About4.png"

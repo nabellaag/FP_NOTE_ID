@@ -14,7 +14,7 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="100*" />
-            <RowDefinition Height="664*" />
+            <RowDefinition Height="664" />
         </Grid.RowDefinitions>
         <Image Margin="874,29,0,448"
                Source="/Aset/Asset-FAQ1.png"
