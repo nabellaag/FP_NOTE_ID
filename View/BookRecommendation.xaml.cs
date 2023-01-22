@@ -39,13 +39,13 @@ namespace NOTE_ID.View
 
                 Button button = new Button
                 {
-                    Width = 250,
-                    Height = 360,
+                    Width = 230,
+                    Height = 340,
                     Margin = new Thickness(20),
                     Tag = i,
-                    Content = App.books[i].nama,
                     Background = new ImageBrush(bitmap),
-                    Style = style
+                    Style = style,
+                    Content = App.books[i].nama,
                 };
 
                 button.Click += new RoutedEventHandler(Book_Click);

@@ -25,10 +25,14 @@
                 Margin="20">
             <Grid Margin="20">
                 <StackPanel>
-                    <Label Content="Here are the basics:"/>
-                    <CheckBox Content="Click anywhere and just start typing"/>
-                    <CheckBox Content="Hit / to see all the types of content you can add - headers, videos, sub pages, etc."/>
-                    <CheckBox Content="Highlight any text, and use the menu that pops up to style your writing however you like"/>
+                    <Label Content="Here are the basics:"
+                           FontSize="18"/>
+                    <CheckBox Content="Click anywhere and just start typing" FontSize="16" 
+                              IsChecked="False"/>
+                    <CheckBox Content="Hit / to see all the types of content you can add - headers, videos, sub pages, etc."
+                              FontSize="16"/>
+                    <CheckBox Content="Highlight any text, and use the menu that pops up to style your writing however you like"
+                              FontSize="16"/>
                 </StackPanel>
             </Grid>
         </Border>

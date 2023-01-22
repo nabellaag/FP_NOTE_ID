@@ -24,7 +24,5 @@ namespace NOTE_ID
         {
             InitializeComponent();
         }
-
-     
     }
 }
