@@ -14,12 +14,14 @@ namespace NOTE_ID.View_Model
         public LoginViewModel()
         {
             loginCommand = new CommandViewModel(ExecuteLoginCommand, CanExecuteLoginCommand);
+            dontHaveAccountCommand = new CommandViewModel(ExecuteDontHaveAccountCommand);
         }
         private string emailOrPhoneField = String.Empty;
         private string passwordField = String.Empty;
         public ICommand LoginCommand { get => loginCommand; set => loginCommand = value; }
         private string errorMessage;
         private ICommand loginCommand;
+        private ICommand dontHaveAccountCommand;
 
         public string EmailOrPhoneField
         {
@@ -48,6 +50,13 @@ namespace NOTE_ID.View_Model
             }
         }
         public Action CloseWindow { get; set; }
+        public ICommand DontHaveAccountCommand { get => dontHaveAccountCommand; set => dontHaveAccountCommand = value; }
+
+        private void ExecuteDontHaveAccountCommand(object obj)
+        {
+            var mainViewModel = (MainViewModel)System.Windows.Application.Current.MainWindow.DataContext;
+            mainViewModel.CurrentView = mainViewModel.SignUpPage;
+        }
 
         private bool CanExecuteLoginCommand(object obj)
         {

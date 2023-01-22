@@ -230,7 +230,8 @@
                     <ColumnDefinition Width="23*"/>
                     <ColumnDefinition Width="333*"/>
                 </Grid.ColumnDefinitions>
-                <Button Style="{DynamicResource donthave}" Content="Don't have an acount? Sign Up"
+                <Button Style="{DynamicResource donthave}"
+                        Content="Don't have an acount? Sign Up"
                         FontSize="13"
                         FontFamily="inter"
                         FontWeight="Regular"
@@ -240,7 +241,8 @@
                         Margin="111,21,196,29"
                         BorderBrush="{x:Null}"
                         RenderTransformOrigin="0.642,0.572"
-                        Command ="{Binding SignUpViewCommand}" Grid.ColumnSpan="3"/>
+                        Command ="{Binding DontHaveAccountCommand}"
+                        Grid.ColumnSpan="3"/>
             </Grid>
 
 

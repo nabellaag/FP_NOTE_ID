@@ -105,6 +105,15 @@ namespace NOTE_ID.View_Model
         
         }
         public Action CloseWindow1 { get; set; }
+        internal SignUpPageViewModel SignUpPage
+        {
+            get => signUpPage;
+            set
+            {
+                signUpPage = value;
+                OnPropertyChanged();
+            }
+        }
 
         public MainViewModel()
         {
@@ -113,7 +122,7 @@ namespace NOTE_ID.View_Model
             fAQPage = new FAQPageViewModel();
             loginPage = new LoginPageViewModel();
             productPage = new ProductPageViewModel();
-            signUpPage = new SignUpPageViewModel();
+            SignUpPage = new SignUpPageViewModel();
 
             currentView = homePage;
 
@@ -122,7 +131,7 @@ namespace NOTE_ID.View_Model
             fAQViewCommand = new CommandViewModel(x => CurrentView = fAQPage);
             loginViewCommand = new CommandViewModel(x => CurrentView = loginPage);
             productViewCommand = new CommandViewModel(x => CurrentView = productPage);
-            signUpViewCommand = new CommandViewModel(x => CurrentView = signUpPage);
+            signUpViewCommand = new CommandViewModel(x => CurrentView = SignUpPage);
         }
 
     }

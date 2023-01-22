@@ -282,7 +282,7 @@
                             Margin="111,2,196,38"
                             BorderBrush="{x:Null}"
                             RenderTransformOrigin="0.642,0.572" 
-                            Command="{Binding LoginCommand}"  />
+                            Command="{Binding HaveAccountCommand}"  />
                 </Grid>
 
 
