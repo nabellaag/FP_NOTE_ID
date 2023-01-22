@@ -29,6 +29,7 @@ namespace NOTE_ID.View
             this.frame = frame;
 
             if (quickNote != null) SetNote();
+      
 
         }
 
