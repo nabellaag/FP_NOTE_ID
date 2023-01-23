@@ -50,6 +50,7 @@ namespace NOTE_ID.View_Model
             }
         }
         public Action CloseWindow { get; set; }
+
         public ICommand DontHaveAccountCommand { get => dontHaveAccountCommand; set => dontHaveAccountCommand = value; }
 
         private void ExecuteDontHaveAccountCommand(object obj)

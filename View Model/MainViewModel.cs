@@ -114,7 +114,6 @@ namespace NOTE_ID.View_Model
                 OnPropertyChanged();
             }
         }
-
         public MainViewModel()
         {
             homePage = new HomePageViewModel();

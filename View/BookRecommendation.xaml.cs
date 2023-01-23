@@ -45,7 +45,7 @@ namespace NOTE_ID.View
                     Tag = i,
                     Background = new ImageBrush(bitmap),
                     Style = style,
-                    Content = App.books[i].nama,
+                    
                 };
 
                 button.Click += new RoutedEventHandler(Book_Click);

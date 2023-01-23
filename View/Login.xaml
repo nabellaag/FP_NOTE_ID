@@ -241,7 +241,7 @@
                         Margin="111,21,196,29"
                         BorderBrush="{x:Null}"
                         RenderTransformOrigin="0.642,0.572"
-                        Command ="{Binding DontHaveAccountCommand}"
+                        Command ="{Binding DontHaveAccountCommand}" 
                         Grid.ColumnSpan="3"/>
             </Grid>
 
