@@ -49,7 +49,6 @@ namespace NOTE_ID.View
                     Height = 150,
                     Margin = new Thickness(20),
                     Tag = i,
-                    Content = App.books[i].nama,
                     Background = new ImageBrush(bitmap),
                     Style = style
                 };

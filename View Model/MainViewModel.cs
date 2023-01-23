@@ -105,7 +105,15 @@ namespace NOTE_ID.View_Model
         
         }
         public Action CloseWindow1 { get; set; }
-
+        internal SignUpPageViewModel SignUpPage
+        {
+            get => signUpPage;
+            set
+            {
+                signUpPage = value;
+                OnPropertyChanged();
+            }
+        }
         public MainViewModel()
         {
             homePage = new HomePageViewModel();

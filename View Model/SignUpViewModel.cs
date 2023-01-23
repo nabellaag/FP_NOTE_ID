@@ -14,6 +14,7 @@ namespace NOTE_ID.View_Model
         public SignUpViewModel()
         {
             signUpCommand = new CommandViewModel(ExecuteSignUpCommand, CanExecuteSignUpCommand);
+            haveAccountCommand = new CommandViewModel(ExecuteHaveAccountCommand);
         }
         private string userName = String.Empty;
         private string password = String.Empty;
@@ -26,6 +27,7 @@ namespace NOTE_ID.View_Model
         private Brush emailBrush = defaultBrush;
         private Brush confirmPasswordBrush = defaultBrush;
         private ICommand signUpCommand;
+        private ICommand haveAccountCommand;
 
         public string UserName
         {
@@ -115,6 +117,18 @@ namespace NOTE_ID.View_Model
             }
         }
 
+        public ICommand HaveAccountCommand
+        {
+            get => haveAccountCommand;
+            set => haveAccountCommand = value;
+        }
+
+        private void ExecuteHaveAccountCommand(object obj)
+        {
+            var mainViewModel =
+                (MainViewModel)System.Windows.Application.Current.MainWindow.DataContext;
+            mainViewModel.CurrentView = mainViewModel.LoginPage;
+        }
         private bool CanExecuteSignUpCommand(object obj)
         {
             string emailPattern = @"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
