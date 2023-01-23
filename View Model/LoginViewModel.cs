@@ -50,12 +50,12 @@ namespace NOTE_ID.View_Model
             }
         }
         public Action CloseWindow { get; set; }
-        public ICommand DontHaveAccountCommand { get => dontHaveAccountCommand; set => 
-                dontHaveAccountCommand = value; }
+
+        public ICommand DontHaveAccountCommand { get => dontHaveAccountCommand; set => dontHaveAccountCommand = value; }
+
         private void ExecuteDontHaveAccountCommand(object obj)
         {
-            var mainViewModel =
-                (MainViewModel)System.Windows.Application.Current.MainWindow.DataContext;
+            var mainViewModel = (MainViewModel)System.Windows.Application.Current.MainWindow.DataContext;
             mainViewModel.CurrentView = mainViewModel.SignUpPage;
         }
 

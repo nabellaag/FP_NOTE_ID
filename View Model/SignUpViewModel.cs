@@ -117,16 +117,11 @@ namespace NOTE_ID.View_Model
             }
         }
 
-        public ICommand HaveAccountCommand
-        {
-            get => haveAccountCommand;
-            set => haveAccountCommand = value;
-        }
+        public ICommand HaveAccountCommand { get => haveAccountCommand; set => haveAccountCommand = value; }
 
         private void ExecuteHaveAccountCommand(object obj)
         {
-            var mainViewModel =
-                (MainViewModel)System.Windows.Application.Current.MainWindow.DataContext;
+            var mainViewModel = (MainViewModel)System.Windows.Application.Current.MainWindow.DataContext;
             mainViewModel.CurrentView = mainViewModel.LoginPage;
         }
         private bool CanExecuteSignUpCommand(object obj)

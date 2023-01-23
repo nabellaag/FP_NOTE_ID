@@ -230,7 +230,7 @@
                     <ColumnDefinition Width="23*"/>
                     <ColumnDefinition Width="333*"/>
                 </Grid.ColumnDefinitions>
-                <Button Style="{DynamicResource donthave}" 
+                <Button Style="{DynamicResource donthave}"
                         Content="Don't have an acount? Sign Up"
                         FontSize="13"
                         FontFamily="inter"

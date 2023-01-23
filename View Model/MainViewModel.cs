@@ -121,7 +121,7 @@ namespace NOTE_ID.View_Model
             fAQPage = new FAQPageViewModel();
             loginPage = new LoginPageViewModel();
             productPage = new ProductPageViewModel();
-            signUpPage = new SignUpPageViewModel();
+            SignUpPage = new SignUpPageViewModel();
 
             currentView = homePage;
 
@@ -130,7 +130,7 @@ namespace NOTE_ID.View_Model
             fAQViewCommand = new CommandViewModel(x => CurrentView = fAQPage);
             loginViewCommand = new CommandViewModel(x => CurrentView = loginPage);
             productViewCommand = new CommandViewModel(x => CurrentView = productPage);
-            signUpViewCommand = new CommandViewModel(x => CurrentView = signUpPage);
+            signUpViewCommand = new CommandViewModel(x => CurrentView = SignUpPage);
         }
 
     }
